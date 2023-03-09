@@ -1,5 +1,5 @@
 <?php
-  $web_title = "Контакты"
+  $web_title = "Блог"
 ?>
 
 <?php include "./layout/header.php" ?>
