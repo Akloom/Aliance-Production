@@ -1,21 +1,21 @@
 @font-face {
-  font-family: "Noto Sans";
-  src: url("../fonts/NotoSans/NotoSans-Regular.ttf");
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Noto Sans";
-  src: url("../fonts/NotoSans/NotoSans-SemiBold.ttf");
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-SemiBold.ttf");
   font-weight: 600;
 }
 @font-face {
-  font-family: "Noto Sans";
-  src: url("../fonts/NotoSans/NotoSans-Bold.ttf");
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Bold.ttf");
   font-weight: 700;
 }
 @font-face {
-  font-family: "Bebas Neue";
-  src: url("../fonts/BebasNeue/BebasNeue-Regular.ttf");
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
   font-weight: 400;
 }
 * {
@@ -38,7 +38,237 @@
 }
 
 .wrapper {
-  font-family: "Noto Sans", "Bebas Neue", sans-serif;
+  font-family: "Inter", "Montserrat", sans-serif;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+  margin-left: auto;
+  padding: 12px;
+  border: 1px solid #EBEBF0;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s all;
+}
+.close span {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: #828A99;
+  border-radius: 0.625rem;
+  transform: rotate(45deg);
+  transition: 0.6s all;
+}
+.close span::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #828A99;
+  border-radius: 0.625rem;
+  transform: rotate(-90deg);
+  transition: 0.6s all;
+}
+
+.close:hover,
+.close:focus {
+  background: #5C8EE5;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close:hover span,
+.close:focus span {
+  background: #FFFFFF;
+}
+.close:hover span::before,
+.close:focus span::before {
+  background: #FFFFFF;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 40px 50px;
+  border: 1px solid #888;
+  width: max-content;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.modal-content {
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-content__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.modal-content__header h1 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  color: #292D33;
+  text-transform: uppercase;
+}
+.modal-content__body {
+  margin-top: 20px;
+}
+.modal-content__body p {
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828A99;
+}
+.modal-content__body-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.modal-content__body-form__item {
+  max-width: 400px;
+  position: relative;
+}
+.modal-content__body-form__item input {
+  width: 100%;
+  padding: 20px 30px;
+  border: 1px solid #E4E4EB;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: #292D33;
+  transition: 0.6s all;
+}
+.modal-content__body-form__item input:focus {
+  border: 1px solid #5C8EE5;
+}
+.modal-content__body-form__item small {
+  position: absolute;
+  right: -60px;
+  bottom: -20px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 160%;
+  color: #de0f0f;
+}
+.modal-content__body-form button {
+  cursor: pointer;
+  width: 100%;
+  padding: 20px 0;
+  border: 1px solid #5C8EE5;
+  background: #5C8EE5;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  color: #FFFFFF;
+  transition: 0.6s all;
+}
+.modal-content__body-form button:hover {
+  background: transparent;
+  color: #5C8EE5;
+}
+.modal-content__footer {
+  margin-top: 24px;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.modal-content__footer p {
+  width: 100%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #828A99;
+}
+
+@media screen and (max-width: 600px) {
+  .modal .close {
+    padding: 6px;
+    width: 20px;
+    height: 20px;
+  }
+  .modal-content {
+    padding: 20px 25px;
+  }
+  .modal-content {
+    max-width: 260px;
+  }
+  .modal-content__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+  .modal-content__header h1 {
+    font-size: 20px;
+  }
+  .modal-content__body {
+    margin-top: 10px;
+  }
+  .modal-content__body p {
+    font-size: 14px;
+  }
+  .modal-content__body-form {
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .modal-content__body-form__item {
+    max-width: 230px;
+  }
+  .modal-content__body-form__item input {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .modal-content__body-form__item small {
+    bottom: -14px;
+    right: -30px;
+  }
+  .modal-content__body-form button {
+    padding: 15px 0;
+    font-size: 12px;
+  }
+  .modal-content__footer {
+    margin-top: 15px;
+    gap: 10px;
+  }
+  .modal-content__footer p {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

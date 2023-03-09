@@ -12,4 +12,4 @@ get('/politics', 'pages/politics.php');
 get('/product-agtech', 'pages/product-agtech.php');
 get('/product-auto', 'pages/product-auto.php');
 
-any('/404','views/404.php');
+any('/404','pages/404.php');

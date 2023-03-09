@@ -1,7 +1,7 @@
 @import './var';
 @import './fonts';
 
-*{
+* {
   margin: 0;
   padding: 0;
   color: inherit;
@@ -15,11 +15,14 @@
   font-family: inherit;
 }
 
-.container{
+.container {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-.wrapper{
-  font-family: "Noto Sans", "Bebas Neue", sans-serif;
+.wrapper {
+  font-family: 'Inter', 'Montserrat', sans-serif;
 }
+
+@import './layout/header';
+@import './include/modal';
