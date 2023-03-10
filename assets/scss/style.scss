@@ -24,5 +24,10 @@
   font-family: 'Inter', 'Montserrat', sans-serif;
 }
 
+.bg{
+  background: url('../img/image/bg-image.png') no-repeat;
+  background-size: cover;
+}
+
 @import './layout/header';
 @import './include/modal';

@@ -1,29 +1,72 @@
-  <header>
+  <?php
+  include "config.php";
+  global $connect;
+
+  $errMessageName = $errMessagePhone = '';
+
+  if (isset($_POST['send'])) {
+
+    if (empty($_POST['name'])) {
+      $errMessageName = "Поле не должно быть пустым";
+    } else {
+      $errMessageName = "";
+    }
+
+    if (empty($_POST['phone'])) {
+      $errMessagePhone = "Поле не должно быть пустым";
+    } else {
+      $errMessagePhone = "";
+    }
+
+    if ($_POST['name']) {
+      $name = $_POST['name'];
+
+      if ($_POST['phone']) {
+        $number = $_POST['phone'];
+
+        $add_consultation = "";
+        $request_consultation = mysqli_query($connect, $add_consultation);
+      }
+    }
+  }
+
+  ?>
+
+  <!-- Шапка -->
+
+  <header class="header">
+    <a href="/" class="header-logo">
+      <img src="./assets/img/icons/logo-icon.svg" alt="logo">
+    </a>
     <div class="hamburger-menu">
       <span></span>
     </div>
-    <a href="/">
-      <img src="./assets/img/icons/logo-icon.svg" alt="logo">
-    </a>
     <div class="header-nav__collapse">
+
+      <!-- Навигация -->
+
       <div class="header-nav">
-        <a href="/about">О компании</a>
-        <a href="/contract-product">Контрактное производство</a>
-        <a href="/own-product">Собственные торговые марки</a>
-        <a href="/news">Новости</a>
-        <a href="/contact">Контакты</a>
+        <a href="/about" class="header-nav__link">О компании</a>
+        <a href="/contract-product" class="header-nav__link">Контрактное производство</a>
+        <a href="/own-product" class="header-nav__link">Собственные торговые марки</a>
+        <a href="/news" class="header-nav__link">Новости</a>
+        <a href="/contact" class="header-nav__link">Контакты</a>
+        <span class="header-nav__line"></span>
       </div>
+
+      <!-- Информация в мобильной версии -->
+
       <div class="header-nav__info">
         <a href="tel: +7 (499) 686-10-14">+7 (499) 686-10-14</a>
         <div class="header-nav__info-contacts">
           <div class="header-nav__info-contacts__item">
-            <svg>
+            <svg class="header-nav__info-contacts__item-icon">
               <use href="../assets/img/icons/svg-sprites.svg#nav-icon"></use>
             </svg>
             <p>г. Мосвка, Холодильный пер. 4к1с8</p>
           </div>
           <div class="header-nav__info-contacts__item">
-            <svg>
+            <svg class="header-nav__info-contacts__item-icon">
               <use href="../assets/img/icons/svg-sprites.svg#mail-icon"></use>
             </svg>
             <a href="mailto: a.dragunov@tdaliance.ru">a.dragunov@tdaliance.ru</a>
@@ -31,24 +74,26 @@
         </div>
         <div class="header-nav__info-social">
           <a href="">
-            <svg>
+            <svg class="header-nav__info-social__icon">
               <use href="../assets/img/icons/svg-sprites.svg#vk-icon"></use>
             </svg>
           </a>
           <a href="">
-            <svg>
+            <svg class="header-nav__info-social__icon">
               <use href="../assets/img/icons/svg-sprites.svg#inst-icon"></use>
             </svg>
           </a>
         </div>
       </div>
-    </div>
-    <div class="header-contact">
-      <a href="" class="header-contact">
-        <svg>
-          <use href="../assets/img/icons/svg-sprites.svg#phone-icon"></use>
-        </svg>
-        <a href="tel: +7 (499) 686-10-14">+7 (499) 686-10-14</ф>
+
+      <!-- Контакты и модальное окно -->
+
+      <div class="header-contact">
+        <a href="tel: +7 (499) 686-10-14">
+          <svg class="header-contact__icon">
+            <use href="../assets/img/icons/svg-sprites.svg#phone-icon"></use>
+          </svg>
+          <span>+7-(499)-686-10-14</span>
         </a>
         <button id="myBtn">Получить консультацию</button>
 
@@ -66,11 +111,15 @@
               <form action="" method="post" class="modal-content__body-form">
                 <div class="modal-content__body-form__item">
                   <input type="text" name="name" placeholder="Ваше имя">
-                  <small class="modal-content__body-form__item-error">Поле не должно быть пустым</small>
+                  <?php if ($errMessageName) : ?>
+                    <small class="modal-content__body-form__item-error"> <?= $errMessageName; ?> </small>
+                  <?php endif; ?>
                 </div>
                 <div class="modal-content__body-form__item">
-                  <input type="text" name="name" placeholder="Ваш номер телефона">
-                  <small class="modal-content__body-form__item-error">Поле не должно быть пустым</small>
+                  <input type="text" name="phone" placeholder="Ваш номер телефона">
+                  <?php if ($errMessageNumber) : ?>
+                    <small class="modal-content__body-form__item-error"> <?= $errMessageName; ?> </small>
+                  <?php endif; ?>
                 </div>
                 <button type="submit" name="send">Отправить заявку</button>
               </form>
@@ -81,5 +130,6 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
   </header>
