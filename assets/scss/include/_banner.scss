@@ -1,0 +1,142 @@
+.banner {
+  background: url('../img/image/bg-image.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+
+  &-content {
+    padding: 0 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+
+    &__desc {
+      margin-top: auto;
+      margin-bottom: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      h1 {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        color: $color-white-50;
+        text-transform: uppercase;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: -30px;
+          width: 30%;
+          height: 2px;
+          background: $main-color;
+        }
+      }
+
+      p {
+        max-width: 720px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: $color-white-50;
+      }
+
+      a {
+        width: max-content;
+        padding: 25px 60px;
+        border: 1px solid $main-color;
+        background: $main-color;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        color: $color-white-50;
+        transition: .6s all;
+
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .banner {
+    &-content {
+
+      &__desc {
+        margin-top: 50px;
+        gap: 30px;
+
+        h1 {
+          font-size: 34px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      a {
+        padding: 20px 50px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .banner {
+    &-content {
+      gap: 20px;
+
+      &__desc {
+        gap: 20px;
+
+        h1 {
+          font-size: 28px;
+        }
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      a {
+        padding: 20px 40px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .banner {
+    &-content {
+      gap: 20px;
+
+      &__desc {
+        gap: 10px;
+
+        h1 {
+          font-size: 22px;
+        }
+      }
+
+      p {
+        font-size: 10px;
+      }
+
+      a {
+        padding: 15px 40px;
+        font-size: 16px;
+      }
+    }
+  }
+}
