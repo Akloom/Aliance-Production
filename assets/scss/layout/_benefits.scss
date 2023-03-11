@@ -27,7 +27,7 @@
   }
 }
 
-.main-swiper {
+.benefits {
 
   &__buttons {
     display: flex;
@@ -80,33 +80,33 @@
   }
 }
 
-.main-swiper__item-desc__white {
+.benefits__item-desc__white {
   color: $color-white-50;
 }
 
-.main-swiper__item:hover .main-swiper__item-icon {
+.benefits__item:hover .benefits__item-icon {
   fill: $color-white-50;
 }
 
-.main-swiper__item:hover .main-swiper__item-desc {
+.benefits__item:hover .benefits__item-desc {
   color: $color-white-50;
 }
 
 @media screen and (max-width: 920px) {
 
-  .main-swiper__item {
+  .benefits__item {
     height: 140px;
   }
 }
 
 @media screen and (max-width: 620px) {
-  .main-swiper__item {
+  .benefits__item {
     height: 120px;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .main-swiper__item {
+  .benefits__item {
     height: 100px;
 
     &-icon {

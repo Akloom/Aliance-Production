@@ -1,3 +1,5 @@
+// Появление модального окна
+
 let modal = document.getElementById("myModal");
 let btn = document.getElementById("myBtn");
 let span = document.getElementsByClassName("close")[0];
@@ -16,12 +18,16 @@ window.onclick = function (event) {
   }
 }
 
+// Гамбургер
+
 let hamburger = document.querySelector('.hamburger-menu');
 let navCollapse = document.querySelector('.header-nav__collapse');
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('is-active');
   navCollapse.classList.toggle('is-active');
 });
+
+// Swiper номер 1 (benefits)
 
 var swiper1 = new Swiper("#swiper1", {
   navigation: {
@@ -47,6 +53,8 @@ var swiper1 = new Swiper("#swiper1", {
     },
   },
 });
+
+// Swiper номер 2 (scheme work)
 
 var swiper2 = new Swiper("#swiper2", {
   navigation: {
