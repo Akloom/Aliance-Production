@@ -1,4 +1,5 @@
 <?php
+// Название страницы
 $web_title = "Главная"
 ?>
 
@@ -73,11 +74,20 @@ $web_title = "Главная"
     </div>
 </section>
 
+<!-- Блок: Схема работы -->
+
 <?php include "./layout/scheme-work.php" ?>
+
+<!-- Блок: Контрактное производство -->
 
 <section class="contract-production container">
   <h1>Контрактное производство</h1>
   <?php include "./include/contract-production.php" ?>
+</section>
+
+<section class="trade-marks container">
+  <h1>Собственные торговые марки</h1>
+  <?php include "./include/trade-marks.php" ?>
 </section>
 
 <?php include "./layout/footer.php" ?>

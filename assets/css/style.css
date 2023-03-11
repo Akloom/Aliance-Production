@@ -764,6 +764,7 @@
   font-size: 36px;
   line-height: 120%;
   color: #292D33;
+  text-transform: uppercase;
   position: relative;
 }
 .scheme h1::before {
@@ -857,15 +858,24 @@
   .scheme {
     margin-top: 140px;
   }
+  .scheme h1 {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 620px) {
   .scheme {
     margin-top: 100px;
   }
+  .scheme h1 {
+    font-size: 26px;
+  }
 }
 @media screen and (max-width: 480px) {
   .scheme {
     margin-top: 60px;
+  }
+  .scheme h1 {
+    font-size: 22px;
   }
 }
 .contract-production {
@@ -873,14 +883,14 @@
   margin-top: 150px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
 }
 .contract-production h1 {
   width: max-content;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 48px;
   line-height: 120%;
   color: #292D33;
+  text-transform: uppercase;
 }
 .contract-production h1::before {
   margin-bottom: 30px;
@@ -893,6 +903,7 @@
 }
 
 .contract-row {
+  margin-top: 50px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
@@ -939,12 +950,12 @@
 @media screen and (max-width: 920px) {
   .contract-production {
     margin-top: 130px;
-    gap: 40px;
   }
   .contract-production h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
   .contract-row {
+    margin-top: 40px;
     grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
   }
   .contract-row__card {
@@ -964,12 +975,12 @@
 @media screen and (max-width: 620px) {
   .contract-production {
     margin-top: 80px;
-    gap: 30px;
   }
   .contract-production h1 {
-    font-size: 30px;
+    font-size: 24px;
   }
   .contract-row {
+    margin-top: 30px;
     grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
   }
   .contract-row__card {
@@ -989,12 +1000,12 @@
 @media screen and (max-width: 480px) {
   .contract-production {
     margin-top: 50px;
-    gap: 20px;
   }
   .contract-production h1 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .contract-row {
+    margin-top: 20px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
   .contract-row__card {
@@ -1009,6 +1020,158 @@
   }
   .contract-row__card-content p {
     font-size: 12px;
+  }
+}
+.trade-marks {
+  margin-top: 150px;
+  padding: 0 20px;
+}
+.trade-marks h1 {
+  width: max-content;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: #292D33;
+  text-transform: uppercase;
+}
+.trade-marks h1::before {
+  margin-bottom: 30px;
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  border-radius: 32px;
+  background: #5C8EE5;
+}
+
+.marks {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.marks-card {
+  max-width: 640px;
+  padding: 40px 55px;
+  box-sizing: border-box;
+  border: 1px solid #EBEBF0;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  transition: 0.6s all;
+}
+.marks-card:hover {
+  border: 1px solid #5C8EE5;
+}
+.marks-card__icon {
+  width: 140px;
+  height: 140px;
+  fill: #828A99;
+  transition: 0.6s all;
+}
+.marks-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.marks-card__content-title {
+  width: max-content;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 160%;
+  color: #292D33;
+  transition: 0.6s all;
+}
+.marks-card__content p {
+  max-width: 360px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828A99;
+}
+
+.marks-card:hover .marks-card__icon {
+  fill: #5C8EE5;
+}
+
+.marks-card:hover .marks-card__content-title {
+  color: #5C8EE5;
+}
+
+@media screen and (max-width: 920px) {
+  .trade-marks {
+    margin-top: 130px;
+  }
+  .trade-marks h1 {
+    font-size: 32px;
+  }
+  .marks {
+    margin-top: 40px;
+  }
+  .marks-card {
+    padding: 35px 50px;
+    gap: 40px;
+  }
+  .marks-card__icon {
+    width: 120px;
+    height: 120px;
+  }
+  .marks-card__content-title {
+    font-size: 24px;
+  }
+  .marks-card__content p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .trade-marks {
+    margin-top: 80px;
+  }
+  .trade-marks h1 {
+    font-size: 24px;
+  }
+  .marks {
+    margin-top: 30px;
+  }
+  .marks-card {
+    padding: 30px 50px;
+    gap: 30px;
+  }
+  .marks-card__icon {
+    width: 100px;
+    height: 100px;
+  }
+  .marks-card__content-title {
+    font-size: 20px;
+  }
+  .marks-card__content p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .trade-marks {
+    margin-top: 50px;
+  }
+  .trade-marks h1 {
+    font-size: 15px;
+  }
+  .trade-marks h1::before {
+    margin-bottom: 15px;
+  }
+  .marks {
+    margin-top: 20px;
+  }
+  .marks-card {
+    padding: 15px 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .marks-card__content-title {
+    font-size: 16px;
+  }
+  .marks-card__content p {
+    font-size: 10px;
   }
 }
 

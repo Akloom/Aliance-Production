@@ -12,6 +12,7 @@
     font-size: 36px;
     line-height: 120%;
     color: $color-black-800;
+    text-transform: uppercase;
     position: relative;
 
     &::before {
@@ -117,17 +118,29 @@
 @media screen and (max-width: 920px) {
   .scheme{
     margin-top: 140px;
+
+    h1{
+      font-size: 30px;
+    }
   }
 }
 
 @media screen and (max-width: 620px) {
   .scheme{
     margin-top: 100px;
+    
+    h1{
+      font-size: 26px;
+    }
   }
 }
 
 @media screen and (max-width: 480px) {
   .scheme{
     margin-top: 60px;
+    
+    h1{
+      font-size: 22px;
+    }
   }
 }

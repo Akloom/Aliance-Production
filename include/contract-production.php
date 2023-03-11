@@ -1,4 +1,4 @@
-<div class="contract-row">
+<div class="contract-row container">
   <div class="contract-row__card">
     <div class="contract-row__card-content">
       <h2 class="contract-row__card-content__title">Автомобильная химия</h2>
