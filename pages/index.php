@@ -75,4 +75,9 @@ $web_title = "Главная"
 
 <?php include "./layout/scheme-work.php" ?>
 
+<section class="contract-production container">
+  <h1>Контрактное производство</h1>
+  <?php include "./include/contract-production.php" ?>
+</section>
+
 <?php include "./layout/footer.php" ?>
