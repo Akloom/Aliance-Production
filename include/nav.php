@@ -117,8 +117,8 @@
                 </div>
                 <div class="modal-content__body-form__item">
                   <input type="text" name="phone" placeholder="Ваш номер телефона">
-                  <?php if ($errMessageNumber) : ?>
-                    <small class="modal-content__body-form__item-error"> <?= $errMessageName; ?> </small>
+                  <?php if ($errMessagePhone) : ?>
+                    <small class="modal-content__body-form__item-error"> <?= $errMessagePhone; ?> </small>
                   <?php endif; ?>
                 </div>
                 <button type="submit" name="send">Отправить заявку</button>
