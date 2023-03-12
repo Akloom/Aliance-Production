@@ -1,0 +1,188 @@
+.aerosol {
+  margin-top: 150px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  &-info {
+    max-width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h1 {
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 120%;
+      color: $color-black-800;
+      text-transform: uppercase;
+
+      &::before {
+        margin-bottom: 30px;
+        content: '';
+        display: block;
+        width: 40%;
+        height: 2px;
+        border-radius: 32px;
+        background: $main-color;
+      }
+    }
+
+    &__content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      &-items {
+        width: 292px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            color: $color-black-800;
+          }
+        }
+      }
+    }
+  }
+
+  &-images {
+    max-width: 615px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+      padding: 40px 65px;
+      border: 1px solid $color-white-100;
+      width: 70px;
+      filter: grayscale(1);
+      transition: .6s all;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .aerosol {
+    margin-top: 100px;
+    gap: 40px;
+  
+    &-info {
+      gap: 30px;
+  
+      h1 {
+        font-size: 30px;
+  
+        &::before {
+          margin-bottom: 20px;
+        }
+      }
+  
+      &__content {
+        gap: 20px;
+  
+        &-items {
+          gap: 15px;
+  
+          a {
+  
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  
+    &-images {
+      img {
+        padding: 40px 65px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .aerosol {
+    margin-top: 80px;
+    gap: 30px;
+  
+    &-info {
+  
+      h1 {
+        font-size: 22px;
+      }
+  
+      &__content {
+        &-items {
+          a {
+            gap: 15px;
+  
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  
+    &-images {
+      img {
+        padding: 30px 55px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aerosol {
+    margin-top: 50px;
+    &-info {
+      gap: 20px;
+  
+      h1 {
+        font-size: 16px;
+      }
+  
+      &__content {
+        gap: 15px;
+  
+        &-items {
+          gap: 10px;
+  
+          a {
+            gap: 10px;
+  
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  
+    &-images {
+      img {
+        width: 50px;
+        padding: 25px 40px;
+      }
+    }
+  }
+}

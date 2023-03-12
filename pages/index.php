@@ -92,8 +92,12 @@ $web_title = "Главная"
   <?php include "./include/trade-marks.php" ?>
 </section>
 
-<!-- Блок отношение к делу и клиентам -->
+<!-- Блок: отношение к делу и клиентам -->
 
 <?php include "./include/attitude.php" ?>
+
+<!-- Блок: аэрозольная продукция -->
+
+<?php include "./include/aerosol.php" ?>
 
 <?php include "./layout/footer.php" ?>
