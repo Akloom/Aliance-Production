@@ -13,6 +13,7 @@
     gap: 40px;
 
     h1 {
+      font-family: "Montserrat";
       font-weight: 400;
       font-size: 34px;
       line-height: 120%;
@@ -46,12 +47,14 @@
           display: flex;
           align-items: center;
           gap: 15px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 160%;
+          color: $color-black-800;
+          transition: .6s all;
 
-          span {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 160%;
-            color: $color-black-800;
+          &:hover{
+            color: $main-color;
           }
         }
       }
@@ -102,10 +105,7 @@
           gap: 15px;
   
           a {
-  
-            span {
-              font-size: 14px;
-            }
+            font-size: 14px;
           }
         }
       }
@@ -134,10 +134,7 @@
         &-items {
           a {
             gap: 15px;
-  
-            span {
-              font-size: 14px;
-            }
+            font-size: 14px;
           }
         }
       }
@@ -169,10 +166,7 @@
   
           a {
             gap: 10px;
-  
-            span {
-              font-size: 12px;
-            }
+            font-size: 12px;
           }
         }
       }

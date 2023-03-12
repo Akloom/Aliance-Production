@@ -100,4 +100,8 @@ $web_title = "Главная"
 
 <?php include "./include/aerosol.php" ?>
 
+<!-- Блок: Блог экспертов -->
+
+<?php include "./layout/blog-swiper.php" ?>
+
 <?php include "./layout/footer.php" ?>

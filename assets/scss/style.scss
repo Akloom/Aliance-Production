@@ -1,5 +1,5 @@
 @import './var';
-@import './fonts';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 * {
   margin: 0;
@@ -15,13 +15,13 @@
   font-family: inherit;
 }
 
+.wrapper {
+  font-family: 'Inter', sans-serif;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
-}
-
-.wrapper {
-  font-family: 'Inter', 'Montserrat', sans-serif;
 }
 
 @import './layout/header';
@@ -33,3 +33,4 @@
 @import './include/trade-marks';
 @import './include/attitude';
 @import './include/aerosol';
+@import './layout/blog-swiper';

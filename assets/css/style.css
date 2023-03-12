@@ -1,23 +1,4 @@
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter/Inter-Regular.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter/Inter-SemiBold.ttf");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter/Inter-Bold.ttf");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
-  font-weight: 400;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -32,13 +13,13 @@
   font-family: inherit;
 }
 
+.wrapper {
+  font-family: "Inter", sans-serif;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
-}
-
-.wrapper {
-  font-family: "Inter", "Montserrat", sans-serif;
 }
 
 .header {
@@ -885,6 +866,7 @@
   flex-direction: column;
 }
 .contract-production h1 {
+  font-family: "Montserrat";
   width: max-content;
   font-weight: 400;
   font-size: 48px;
@@ -1027,6 +1009,7 @@
   padding: 0 20px;
 }
 .trade-marks h1 {
+  font-family: "Montserrat";
   width: max-content;
   font-weight: 400;
   font-size: 48px;
@@ -1195,6 +1178,7 @@
   margin-right: auto;
 }
 .attitude-content h1 {
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 44px;
   line-height: 120%;
@@ -1324,6 +1308,7 @@
   gap: 40px;
 }
 .aerosol-info h1 {
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 34px;
   line-height: 120%;
@@ -1355,12 +1340,14 @@
   display: flex;
   align-items: center;
   gap: 15px;
-}
-.aerosol-info__content-items a span {
   font-weight: 400;
   font-size: 14px;
   line-height: 160%;
   color: #292D33;
+  transition: 0.6s all;
+}
+.aerosol-info__content-items a:hover {
+  color: #5C8EE5;
 }
 .aerosol-images {
   max-width: 615px;
@@ -1400,7 +1387,7 @@
   .aerosol-info__content-items {
     gap: 15px;
   }
-  .aerosol-info__content-items a span {
+  .aerosol-info__content-items a {
     font-size: 14px;
   }
   .aerosol-images img {
@@ -1417,8 +1404,6 @@
   }
   .aerosol-info__content-items a {
     gap: 15px;
-  }
-  .aerosol-info__content-items a span {
     font-size: 14px;
   }
   .aerosol-images img {
@@ -1443,13 +1428,188 @@
   }
   .aerosol-info__content-items a {
     gap: 10px;
-  }
-  .aerosol-info__content-items a span {
     font-size: 12px;
   }
   .aerosol-images img {
     width: 50px;
     padding: 25px 40px;
+  }
+}
+.blog-swiper {
+  margin-top: 150px;
+  padding: 0 20px;
+}
+.blog-swiper h1 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  color: #292D33;
+  text-transform: uppercase;
+}
+.blog-swiper h1::before {
+  margin-bottom: 30px;
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  border-radius: 32px;
+  background: #5C8EE5;
+}
+.blog-swiper__item {
+  margin-top: 50px;
+  position: relative;
+}
+.blog-swiper__item-content {
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  height: 0;
+  padding: 0 50px;
+  background: rgba(41, 45, 51, 0.6);
+  display: flex;
+  align-items: end;
+  transition: 0.6s all;
+}
+.blog-swiper__item-content__desc {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.blog-swiper__item-content__desc h2 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+.blog-swiper__item-content__desc p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+.blog-swiper__buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.blog-swiper__buttons-btn {
+  background: #5C8EE5;
+}
+.blog-swiper__buttons-icon {
+  padding: 10px 15px;
+  width: 30px;
+  height: 20px;
+  fill: #FFFFFF;
+}
+.blog-swiper__buttons-link {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: #5C8EE5;
+}
+.blog-swiper__buttons-link::before {
+  content: "";
+  display: block;
+  margin-right: 20px;
+  width: 20px;
+  height: 1px;
+  background: #5C8EE5;
+  transition: 0.6s all;
+}
+
+.blog-swiper__buttons-link:hover::before {
+  width: 40px;
+}
+
+.blog-swiper__item:hover .blog-swiper__item-content {
+  height: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .blog-swiper {
+    margin-top: 100px;
+  }
+  .blog-swiper h1 {
+    font-size: 22px;
+  }
+  .blog-swiper h1::before {
+    margin-bottom: 20px;
+  }
+  .blog-swiper__item {
+    margin-top: 40px;
+  }
+  .blog-swiper__item-content__desc {
+    margin-bottom: 40px;
+  }
+  .blog-swiper__item-content__desc h2 {
+    font-size: 20px;
+  }
+  .blog-swiper__item-content__desc p {
+    font-size: 12px;
+  }
+  .blog-swiper__buttons-link {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .blog-swiper {
+    margin-top: 80px;
+  }
+  .blog-swiper h1 {
+    font-size: 22px;
+  }
+  .blog-swiper h1::before {
+    margin-bottom: 15px;
+  }
+  .blog-swiper__item {
+    margin-top: 30px;
+  }
+  .blog-swiper__item-content__desc {
+    margin-bottom: 30px;
+  }
+  .blog-swiper__item-content__desc h2 {
+    font-size: 20px;
+  }
+  .blog-swiper__item-content__desc p {
+    font-size: 12px;
+  }
+  .blog-swiper__buttons-link {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .blog-swiper {
+    margin-top: 50px;
+  }
+  .blog-swiper h1 {
+    font-size: 16px;
+  }
+  .blog-swiper h1::before {
+    margin-bottom: 20px;
+  }
+  .blog-swiper__item {
+    margin-top: 30px;
+  }
+  .blog-swiper__item-content {
+    padding: 0 25px;
+  }
+  .blog-swiper__item-content__desc {
+    margin-bottom: 10px;
+  }
+  .blog-swiper__item-content__desc h2 {
+    font-size: 14px;
+  }
+  .blog-swiper__item-content__desc p {
+    font-size: 10px;
+  }
+  .blog-swiper__buttons-link {
+    font-size: 12px;
   }
 }
 
