@@ -1174,5 +1174,140 @@
     font-size: 10px;
   }
 }
+.attitude {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.attitude-image {
+  max-width: 720px;
+}
+.attitude-image img {
+  width: 100%;
+}
+.attitude-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.attitude-content h1 {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 120%;
+  color: #292D33;
+  text-transform: uppercase;
+}
+.attitude-content h1::before {
+  margin-bottom: 30px;
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  border-radius: 32px;
+  background: #5C8EE5;
+}
+.attitude-content__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.attitude-content__desc p {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #828A99;
+}
+.attitude-content__btn {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: #5C8EE5;
+}
+.attitude-content__btn::before {
+  content: "";
+  display: block;
+  margin-right: 20px;
+  width: 40px;
+  height: 1px;
+  background: #5C8EE5;
+  transition: 0.6s all;
+}
+
+.attitude-content__btn:hover::before {
+  width: 60px;
+}
+
+@media screen and (max-width: 1180px) {
+  .attitude {
+    padding: 0 20px;
+    margin-top: 150px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .attitude-content h1 {
+    font-size: 38px;
+  }
+  .attitude-content__desc p {
+    font-size: 14px;
+  }
+  .attitude-content__btn {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .attitude {
+    margin-top: 100px;
+    justify-content: center;
+  }
+  .attitude-content h1 {
+    font-size: 36px;
+  }
+  .attitude-content h1::before {
+    margin-bottom: 20px;
+  }
+  .attitude-content__desc p {
+    font-size: 14px;
+  }
+  .attitude-content__btn {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .attitude {
+    margin-top: 80px;
+    justify-content: center;
+  }
+  .attitude-content h1 {
+    font-size: 32px;
+  }
+  .attitude-content__desc p {
+    font-size: 12px;
+  }
+  .attitude-content__btn {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .attitude {
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .attitude-content h1 {
+    font-size: 24px;
+  }
+  .attitude-content__desc p {
+    font-size: 10px;
+  }
+  .attitude-content__btn {
+    font-size: 12px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

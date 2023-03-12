@@ -85,9 +85,15 @@ $web_title = "Главная"
   <?php include "./include/contract-production.php" ?>
 </section>
 
+<!-- Блок: торговые марки -->
+
 <section class="trade-marks container">
   <h1>Собственные торговые марки</h1>
   <?php include "./include/trade-marks.php" ?>
 </section>
+
+<!-- Блок отношение к делу и клиентам -->
+
+<?php include "./include/attitude.php" ?>
 
 <?php include "./layout/footer.php" ?>
