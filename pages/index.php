@@ -117,4 +117,8 @@ $web_title = "Главная"
 
 <?php include "./layout/lower-footer.php" ?>
 
+<!-- Навигация подвала -->
+
+<?php include "./layout/footer-nav.php" ?>
+
 <?php include "./layout/footer.php" ?>
