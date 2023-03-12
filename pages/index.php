@@ -4,7 +4,12 @@ $web_title = "Главная"
 ?>
 
 <?php include "./layout/header.php" ?>
+
+<!-- Шапка сайта -->
+
 <?php include "./include/nav.php" ?>
+
+<!-- Блок: Баннер -->
 
 <section class="banner">
   <div class="banner-content container">
@@ -107,5 +112,9 @@ $web_title = "Главная"
 <!-- Блок: сотрудничество -->
 
 <?php include "./include/cooperate.php" ?>
+
+<!-- Подвал сайта -->
+
+<?php include "./layout/lower-footer.php" ?>
 
 <?php include "./layout/footer.php" ?>

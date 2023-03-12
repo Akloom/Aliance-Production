@@ -63,7 +63,7 @@
             <svg class="header-nav__info-contacts__item-icon">
               <use href="../assets/img/icons/svg-sprites.svg#nav-icon"></use>
             </svg>
-            <p>г. Мосвка, Холодильный пер. 4к1с8</p>
+            <p>г. Москва, Холодильный пер. 4к1с8</p>
           </div>
           <div class="header-nav__info-contacts__item">
             <svg class="header-nav__info-contacts__item-icon">

@@ -1878,5 +1878,145 @@
     font-size: 10px;
   }
 }
+.footer {
+  padding: 50px 20px;
+  border-bottom: 1px solid #EBEBF0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-logo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-logo img {
+  max-width: 200px;
+  width: 100%;
+}
+.footer-logo span {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 160%;
+  color: #292D33;
+  text-decoration: underline;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-content__contacts {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.footer-content__contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-content__contacts-item__icon {
+  width: 24px;
+  height: 24px;
+  fill: #5C8EE5;
+}
+.footer-content__contacts-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #292D33;
+}
+.footer-content__social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer-content__social-icon {
+  width: 24px;
+  height: 24px;
+  fill: #5C8EE5;
+}
+
+@media screen and (max-width: 920px) {
+  .footer {
+    padding: 40px 20px;
+  }
+  .footer-logo {
+    width: 40%;
+  }
+  .footer-logo span {
+    font-size: 22px;
+  }
+  .footer-content {
+    gap: 20px;
+  }
+  .footer-content__contacts {
+    gap: 40px;
+  }
+  .footer-content__contacts-item {
+    gap: 10px;
+  }
+  .footer-content__contacts-item p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .footer {
+    padding: 30px 20px;
+  }
+  .footer-logo {
+    width: 40%;
+  }
+  .footer-logo img {
+    max-width: 150px;
+  }
+  .footer-logo span {
+    font-size: 18px;
+  }
+  .footer-content {
+    gap: 20px;
+  }
+  .footer-content__contacts {
+    gap: 30px;
+  }
+  .footer-content__contacts-item {
+    gap: 10px;
+  }
+  .footer-content__contacts-item p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 20px 20px;
+  }
+  .footer-logo {
+    width: 100%;
+  }
+  .footer-logo img {
+    max-width: 100px;
+  }
+  .footer-logo span {
+    font-size: 16px;
+  }
+  .footer-content {
+    gap: 15px;
+  }
+  .footer-content__contacts {
+    gap: 20px;
+  }
+  .footer-content__contacts-item {
+    gap: 10px;
+  }
+  .footer-content__contacts-item p {
+    font-size: 12px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

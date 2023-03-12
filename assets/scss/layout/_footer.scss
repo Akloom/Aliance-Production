@@ -1,0 +1,172 @@
+.footer {
+  padding: 50px 20px;
+  border-bottom: 1px solid $color-white-100;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &-logo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    img {
+      max-width: 200px;
+      width: 100%;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 160%;
+      color: $color-black-800;
+      text-decoration: underline;
+    }
+  }
+
+  &-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__contacts{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+
+      &-item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &__icon{
+          width: 24px;
+          height: 24px;
+          fill: $main-color;
+        }
+
+        p{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: $color-black-800;
+        }
+      }
+    }
+
+    &__social{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      &-icon{
+        width: 24px;
+        height: 24px;
+        fill: $main-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .footer {
+    padding: 40px 20px;
+  
+    &-logo {
+      width: 40%;
+  
+      span {
+        font-size: 22px;
+      }
+    }
+  
+    &-content{
+      gap: 20px;
+  
+      &__contacts{
+        gap: 40px;
+  
+        &-item{
+          gap: 10px;
+  
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .footer {
+    padding: 30px 20px;
+  
+    &-logo {
+      width: 40%;
+
+      img{
+        max-width: 150px;
+      }
+  
+      span {
+        font-size: 18px;
+      }
+    }
+  
+    &-content{
+      gap: 20px;
+  
+      &__contacts{
+        gap: 30px;
+  
+        &-item{
+          gap: 10px;
+  
+          p{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 20px 20px;
+  
+    &-logo {
+      width: 100%;
+
+      img{
+        max-width: 100px;
+      }
+  
+      span {
+        font-size: 16px;
+      }
+    }
+  
+    &-content{
+      gap: 15px;
+  
+      &__contacts{
+        gap: 20px;
+  
+        &-item{
+          gap: 10px;
+  
+          p{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
