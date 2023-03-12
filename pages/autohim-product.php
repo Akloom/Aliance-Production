@@ -1,5 +1,6 @@
 <?php
-  $web_title = "О компании"
+// Название страницы
+$web_title = "Автомобильная химия"
 ?>
 
 <?php include "./layout/header.php" ?>
@@ -7,15 +8,6 @@
 <!-- Шапка сайта -->
 
 <?php include "./include/nav.php" ?>
-
-<!-- Компонент: преимущества -->
-
-<?php include "./layout/benefits.php" ?>
-
-
-<!-- Блок: отношение к делу и клиентам -->
-
-<?php include "./include/attitude.php" ?>
 
 <!-- Блок: аэрозольная продукция -->
 

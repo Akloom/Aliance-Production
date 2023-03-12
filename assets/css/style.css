@@ -676,7 +676,7 @@
   gap: 20px;
   padding: 10px 30px;
   box-sizing: border-box;
-  border: 1px solid rgba(235, 235, 240, 0.2);
+  border: 1px solid #EBEBF0;
   background: transparent;
   transition: 0.6s all;
 }
@@ -1456,6 +1456,11 @@
   border-radius: 32px;
   background: #5C8EE5;
 }
+
+.blog-swiper__padding {
+  padding: 0 20px;
+}
+
 .blog-swiper__item {
   margin-top: 50px;
   position: relative;
@@ -1489,6 +1494,7 @@
   line-height: 160%;
   color: #FFFFFF;
 }
+
 .blog-swiper__buttons {
   margin-top: 20px;
   display: flex;

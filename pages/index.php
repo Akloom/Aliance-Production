@@ -107,6 +107,10 @@ $web_title = "Главная"
 
 <!-- Блок: Блог экспертов -->
 
+<section class="blog-swiper container">
+  <h1>Блог экспертов в области производства</h1>
+</section>
+
 <?php include "./layout/blog-swiper.php" ?>
 
 <!-- Блок: сотрудничество -->
