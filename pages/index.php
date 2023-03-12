@@ -104,4 +104,8 @@ $web_title = "Главная"
 
 <?php include "./layout/blog-swiper.php" ?>
 
+<!-- Блок: сотрудничество -->
+
+<?php include "./include/cooperate.php" ?>
+
 <?php include "./layout/footer.php" ?>
