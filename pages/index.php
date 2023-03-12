@@ -121,4 +121,8 @@ $web_title = "Главная"
 
 <?php include "./layout/footer-nav.php" ?>
 
+<!-- Авторские права -->
+
+<?php include "./layout/copyright.php" ?>
+
 <?php include "./layout/footer.php" ?>
