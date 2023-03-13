@@ -1,4 +1,4 @@
-  <div class="blog-swiper__padding">
+  <div class="blog-swiper__padding" data-aos="fade-up">
     <div class="swiper-container container" id="swiper3">
       <div class="swiper-wrapper">
         <div class="swiper-slide">

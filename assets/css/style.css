@@ -697,6 +697,10 @@
   transition: 0.6s all;
 }
 
+.bd {
+  border: 1px solid rgba(235, 235, 240, 0.2);
+}
+
 .benefits__item-desc__white {
   color: #FFFFFF;
 }
@@ -1705,14 +1709,19 @@
 }
 .cooperate-content__form-inputs__item-error {
   position: absolute;
-  top: -10px;
+  top: -25px;
   right: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #de0f0f;
 }
 .cooperate-content__form-send {
   display: flex;
   gap: 25px;
 }
 .cooperate-content__form-send__btn {
+  cursor: pointer;
   padding: 20px 50px;
   border: 1px solid #5C8EE5;
   background: #5C8EE5;

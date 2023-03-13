@@ -1,34 +1,34 @@
   <?php
   include "config.php";
-  global $connect;
+  // global $connect;
 
-  $errMessageName = $errMessagePhone = '';
+  // $errMessageName = $errMessagePhone = '';
 
-  if (isset($_POST['send'])) {
+  // if (isset($_POST['send'])) {
 
-    if (empty($_POST['name'])) {
-      $errMessageName = "Поле не должно быть пустым";
-    } else {
-      $errMessageName = "";
-    }
+  //   if (empty($_POST['name'])) {
+  //     $errMessageName = "Поле не должно быть пустым";
+  //   } else {
+  //     $errMessageName = "";
+  //   }
 
-    if (empty($_POST['phone'])) {
-      $errMessagePhone = "Поле не должно быть пустым";
-    } else {
-      $errMessagePhone = "";
-    }
+  //   if (empty($_POST['phone'])) {
+  //     $errMessagePhone = "Поле не должно быть пустым";
+  //   } else {
+  //     $errMessagePhone = "";
+  //   }
 
-    if ($_POST['name']) {
-      $name = $_POST['name'];
+  //   if ($_POST['name']) {
+  //     $name = $_POST['name'];
 
-      if ($_POST['phone']) {
-        $number = $_POST['phone'];
+  //     if ($_POST['phone']) {
+  //       $number = $_POST['phone'];
 
-        $add_consultation = "";
-        $request_consultation = mysqli_query($connect, $add_consultation);
-      }
-    }
-  }
+  //       $add_consultation = "";
+  //       $request_consultation = mysqli_query($connect, $add_consultation);
+  //     }
+  //   }
+  // }
 
   ?>
 
@@ -110,18 +110,14 @@
               <p>Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
               <form action="" method="post" class="modal-content__body-form">
                 <div class="modal-content__body-form__item">
-                  <input type="text" name="name" placeholder="Ваше имя">
-                  <?php if ($errMessageName) : ?>
-                    <small class="modal-content__body-form__item-error"> <?= $errMessageName; ?> </small>
-                  <?php endif; ?>
+                  <input type="text" name="name-modal" placeholder="Ваше имя">
+                  <small class="modal-content__body-form__item-error"> <?= $errMessageNameModal; ?> </small>
                 </div>
                 <div class="modal-content__body-form__item">
-                  <input type="text" name="phone" placeholder="Ваш номер телефона">
-                  <?php if ($errMessagePhone) : ?>
-                    <small class="modal-content__body-form__item-error"> <?= $errMessagePhone; ?> </small>
-                  <?php endif; ?>
+                  <input type="text" name="phone-modal" placeholder="Ваш номер телефона">
+                  <small class="modal-content__body-form__item-error"> <?= $errMessagePhoneModal; ?> </small>
                 </div>
-                <button type="submit" name="send">Отправить заявку</button>
+                <button type="submit" name="send-modal">Отправить заявку</button>
               </form>
             </div>
             <div class="modal-content__footer">

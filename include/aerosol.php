@@ -1,4 +1,4 @@
-<section class="aerosol container">
+<section class="aerosol container" data-aos="fade-up">
   <div class="aerosol-info">
     <h1>Производим аэрозольную продукцию для разных сфер</h1>
     <div class="aerosol-info__content">

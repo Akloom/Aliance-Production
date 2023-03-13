@@ -1,13 +1,12 @@
 <?php
 
-const DB_HOST = "localhost";
-const DB_USER = "root";
-const DB_PASS = "";
-const DB_NAME = "aliance-production";
+$host = "localhost";
+    $user = "root";
+    $pass = "";
+    $name = "aliance-production";
 
-$connect = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+    $connect = mysqli_connect($host, $user, $pass, $name);
 
-if(!$connect){
-  die("Code error: " . mysqli_connect_errno() . " MYSQL Error! " . mysqli_connect_error());
-  exit();
-}
+    if(mysqli_connect_errno()){
+        echo "MySQL Connect Error " . mysqli_connect_error();
+    }

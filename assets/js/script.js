@@ -80,7 +80,7 @@ var swiper2 = new Swiper("#swiper2", {
 
 // Swiper номер 2 (blog swiper)
 
-var swiper2 = new Swiper("#swiper3", {
+var swiper3 = new Swiper("#swiper3", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

@@ -12,4 +12,7 @@ get('/autohim-product', 'pages/autohim-product.php');
 get('/own-product', 'pages/own-product.php');
 get('/politics', 'pages/politics.php');
 
+
+post('/', '/pages/index.php');
+
 any('/404','pages/404.php');

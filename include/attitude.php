@@ -1,4 +1,4 @@
-<section class="attitude">
+<section class="attitude" data-aos="fade-up">
   <div class="attitude-image">
     <img src="../assets/img/image/attitude-image.png" alt="attitude">
   </div>

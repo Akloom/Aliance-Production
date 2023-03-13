@@ -1,4 +1,4 @@
-<div class="swiper-container" id="swiper1">
+<div class="swiper-container" id="swiper1" data-aos="fade-up">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <div class="benefits__item">

@@ -1,4 +1,4 @@
-<footer class="footer container">
+<footer class="footer container" data-aos="fade-up">
   <div class="footer-logo">
     <img src="../assets/img/icons/logo-icon.svg" alt="logo">
     <span>+7 (499) 686-10-14</span>

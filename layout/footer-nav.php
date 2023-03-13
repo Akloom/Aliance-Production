@@ -1,4 +1,4 @@
-<footer class="footer-nav container">
+<footer class="footer-nav container" data-aos="fade-up">
   <div class="footer-nav__items">
     <a href="">Контрактное производство</a>
     <div class="footer-nav__items-content">

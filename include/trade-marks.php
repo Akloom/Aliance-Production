@@ -1,4 +1,4 @@
-<div class="marks container">
+<div class="marks container" data-aos="fade-up">
   <a href="/ag-tech-product" class="marks-card">
     <svg class="marks-card__icon">
       <use href="../assets/img/icons/svg-sprites.svg#ag-tech-icon"></use>
