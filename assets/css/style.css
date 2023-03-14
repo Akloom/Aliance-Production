@@ -510,6 +510,124 @@
     font-size: 10px;
   }
 }
+.name-page {
+  background: #F0F2F5;
+}
+.name-page__content {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.name-page h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 960px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  color: #292D33;
+  text-transform: uppercase;
+}
+.name-page h1::before {
+  content: "";
+  display: block;
+  border-radius: 32px;
+  width: 150px;
+  height: 2px;
+  top: -20px;
+  background: #5C8EE5;
+}
+.name-page__breadcrumps {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.name-page__breadcrumps a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #828A99;
+  transition: 0.6s all;
+}
+.name-page__breadcrumps a span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #828A99;
+}
+.name-page__breadcrumps a:hover {
+  color: #5C8EE5;
+}
+.name-page__breadcrumps span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #292D33;
+}
+
+@media screen and (max-width: 920px) {
+  .name-page__content {
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  .name-page h1 {
+    gap: 30px;
+    font-size: 32px;
+  }
+  .name-page__breadcrumps a {
+    font-size: 14px;
+  }
+  .name-page__breadcrumps a span {
+    font-size: 14px;
+  }
+  .name-page__breadcrumps span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .name-page__content {
+    padding: 30px 20px;
+    gap: 15px;
+  }
+  .name-page h1 {
+    gap: 20px;
+    font-size: 28px;
+  }
+  .name-page__breadcrumps a {
+    font-size: 12px;
+  }
+  .name-page__breadcrumps a span {
+    font-size: 12px;
+  }
+  .name-page__breadcrumps span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .name-page__content {
+    padding: 20px 20px;
+    gap: 10px;
+  }
+  .name-page h1 {
+    gap: 15px;
+    font-size: 24px;
+  }
+  .name-page__breadcrumps a {
+    font-size: 10px;
+  }
+  .name-page__breadcrumps a span {
+    font-size: 10px;
+  }
+  .name-page__breadcrumps span {
+    font-size: 10px;
+  }
+}
 .banner {
   background: url("../img/image/bg-image.png") no-repeat;
   background-size: cover;

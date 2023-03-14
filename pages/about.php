@@ -1,5 +1,6 @@
 <?php
-  $web_title = "О компании"
+  $web_title = "О компании";
+  $page_name = "О компании";
 ?>
 
 <?php include "./layout/header.php" ?>
@@ -7,6 +8,10 @@
 <!-- Шапка сайта -->
 
 <?php include "./include/nav.php" ?>
+
+<!-- Название страницы -->
+
+<?php include "./layout/name-page.php" ?>
 
 <!-- Компонент: преимущества -->
 

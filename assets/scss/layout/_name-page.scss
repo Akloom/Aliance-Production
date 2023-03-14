@@ -1,0 +1,155 @@
+.name-page {
+  background: $color-white-70;
+
+  &__content{
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 960px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    color: $color-black-800;
+    text-transform: uppercase;
+
+    &::before {
+      content: '';
+      display: block;
+      border-radius: 32px;
+      width: 150px;
+      height: 2px;
+      top: -20px;
+      background: $main-color;
+    }
+  }
+
+  &__breadcrumps {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 160%;
+      color: $color-gray-500;
+      transition: .6s all;
+
+      span{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: $color-gray-500;
+      }
+
+      &:hover{
+        color: $main-color;
+      }
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 160%;
+      color: $color-black-800;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .name-page {
+  
+    &__content{
+      padding: 40px 20px;
+      gap: 20px;
+    }
+  
+    h1 {
+      gap: 30px;
+      font-size: 32px;
+    }
+  
+    &__breadcrumps {
+      a {
+        font-size: 14px;
+
+        span{
+          font-size: 14px;
+        }
+      }
+  
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .name-page {
+  
+    &__content{
+      padding: 30px 20px;
+      gap: 15px;
+    }
+  
+    h1 {
+      gap: 20px;
+      font-size: 28px;
+    }
+  
+    &__breadcrumps {
+      a {
+        font-size: 12px;
+
+        span{
+          font-size: 12px;
+        }
+      }
+  
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .name-page {
+  
+    &__content{
+      padding: 20px 20px;
+      gap: 10px;
+    }
+  
+    h1 {
+      gap: 15px;
+      font-size: 24px;
+    }
+  
+    &__breadcrumps {
+      a {
+        font-size: 10px;
+
+        span{
+          font-size: 10px;
+        }
+      }
+  
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+}
