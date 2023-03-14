@@ -1,6 +1,9 @@
 <?php
-  $web_title = "Контрактное производство"
+// Название страницы
+$web_title = "Контрактное производство";
+$page_name = "Контрактное производство";
 ?>
+
 
 <?php include "./layout/header.php" ?>
 
@@ -8,13 +11,9 @@
 
 <?php include "./include/nav.php" ?>
 
-<!-- Блок: Контрактное производство -->
+<!-- Название страницы -->
 
-<?php include "./include/contract-production.php" ?>
-
-<!-- Блок: сотрудничество -->
-
-<?php include "./include/cooperate.php" ?>
+<?php include "./layout/name-page.php" ?>
 
 <!-- Подвал сайта -->
 
@@ -23,7 +22,6 @@
 <!-- Навигация подвала -->
 
 <?php include "./layout/footer-nav.php" ?>
-
 <!-- Авторские права -->
 
 <?php include "./layout/copyright.php" ?>
