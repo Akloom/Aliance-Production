@@ -103,13 +103,13 @@ if (isset($_POST['send-modal'])) {
           </div>
         </div>
         <div class="benefits__buttons">
-          <button class="swiper-button-next benefits__buttons-btn">
-            <svg class="benefits__icon">
+          <button class="swiper-button-next benefits__buttons-btn bd">
+            <svg class="benefits__icon-white">
               <use href="../assets/img/icons/svg-sprites.svg#r-arrow-icon"></use>
             </svg>
           </button>
-          <button class="swiper-button-prev benefits__buttons-btn">
-            <svg class="benefits__icon">
+          <button class="swiper-button-prev benefits__buttons-btn bd">
+            <svg class="benefits__icon-white">
               <use href="../assets/img/icons/svg-sprites.svg#l-arrow-icon"></use>
             </svg>
           </button>

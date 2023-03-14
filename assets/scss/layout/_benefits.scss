@@ -37,14 +37,14 @@
 
     &-btn {
       width: 50%;
-      border: 1px solid $color-white-100-opacity;
+      border: 1px solid $color-white-100;
     }
   }
 
   &__icon {
     width: 32px;
     height: 24px;
-    fill: $color-white-50;
+    fill: $color-black-800;
   }
 
   &__item {
@@ -86,6 +86,12 @@
 
 .benefits__item-desc__white {
   color: $color-white-50;
+}
+
+.benefits__icon-white {
+  width: 32px;
+  height: 24px;
+  fill: $color-white-50;
 }
 
 .benefits__item:hover .benefits__item-icon {

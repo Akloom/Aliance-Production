@@ -47,8 +47,24 @@
 
       <div class="header-nav">
         <a href="/about" class="header-nav__link">О компании</a>
-        <a href="/contract-product" class="header-nav__link">Контрактное производство</a>
-        <a href="/own-product" class="header-nav__link">Собственные торговые марки</a>
+        <div class="header-nav__dropdown">
+          <a href="/contract-product" class="header-nav__link">Контрактное производство</a>
+          <div class="header-nav__dropdown-content">
+            <a href="/autohim-product">Автомобильная химия</a>
+            <a href="#">Бытовая химия</a>
+            <a href="#">Дезинфицирующие средства</a>
+            <a href="#">Пищевые аэрозоли</a>
+            <a href="#">Косметическая продукция</a>
+            <a href="#">Краски аэрозольные</a>
+          </div>
+        </div>
+        <div class="header-nav__dropdown">
+          <a href="/own-product" class="header-nav__link">Собственные торговые марки</a>
+          <div class="header-nav__dropdown-content">
+            <a href="/ag-tech-product">Автохимия AG-Tech</a>
+            <a href="#">Автохимия AP</a>
+          </div>
+        </div>
         <a href="/news" class="header-nav__link">Новости</a>
         <a href="/contact" class="header-nav__link">Контакты</a>
         <span class="header-nav__line"></span>

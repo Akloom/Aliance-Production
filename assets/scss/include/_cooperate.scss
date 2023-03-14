@@ -116,6 +116,12 @@
           font-size: 14px;
           line-height: 160%;
           color: $color-white-50;
+          transition: .6s all;
+
+          &:hover{
+            background: transparent;
+            color: $main-color;
+          }
         }
 
         p {
