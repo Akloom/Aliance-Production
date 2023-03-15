@@ -1,0 +1,111 @@
+.experience {
+  margin-top: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 120px;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 120%;
+      color: $color-black-800;
+      text-transform: uppercase;
+
+      &::before {
+        content: '';
+        display: block;
+        border-radius: 32px;
+        width: 30%;
+        height: 2px;
+        background: $main-color;
+      }
+    }
+
+    p {
+      max-width: 700px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: $color-gray-500;
+    }
+  }
+
+  &-image {
+    max-width: 400px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .experience {
+    margin-top: 100px;
+    gap: 100px;
+  
+    &-content {
+  
+      h1 {
+        gap: 30px;
+        font-size: 36px;
+      }
+  
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .experience {
+    margin-top: 80px;
+    gap: 80px;
+  
+    &-content {
+  
+      h1 {
+        gap: 20px;
+        font-size: 30px;
+      }
+  
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .experience {
+    margin-top: 50px;
+    gap: 40px;
+  
+    &-content {
+  
+      h1 {
+        gap: 10px;
+        font-size: 18px;
+      }
+  
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+}

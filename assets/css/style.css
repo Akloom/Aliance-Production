@@ -730,8 +730,7 @@
   gap: 40px;
 }
 .banner-content__desc {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 180px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -828,6 +827,94 @@
     font-size: 16px;
   }
 }
+.experience {
+  margin-top: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 120px;
+}
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.experience-content h1 {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  color: #292D33;
+  text-transform: uppercase;
+}
+.experience-content h1::before {
+  content: "";
+  display: block;
+  border-radius: 32px;
+  width: 30%;
+  height: 2px;
+  background: #5C8EE5;
+}
+.experience-content p {
+  max-width: 700px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828A99;
+}
+.experience-image {
+  max-width: 400px;
+}
+.experience-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .experience {
+    margin-top: 100px;
+    gap: 100px;
+  }
+  .experience-content h1 {
+    gap: 30px;
+    font-size: 36px;
+  }
+  .experience-content p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .experience {
+    margin-top: 80px;
+    gap: 80px;
+  }
+  .experience-content h1 {
+    gap: 20px;
+    font-size: 30px;
+  }
+  .experience-content p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .experience {
+    margin-top: 50px;
+    gap: 40px;
+  }
+  .experience-content h1 {
+    gap: 10px;
+    font-size: 18px;
+  }
+  .experience-content p {
+    font-size: 10px;
+  }
+}
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -873,6 +960,7 @@
   fill: #292D33;
 }
 .benefits__item {
+  margin-top: 100px;
   width: 100%;
   height: 128px;
   display: flex;
@@ -926,16 +1014,19 @@
 @media screen and (max-width: 920px) {
   .benefits__item {
     height: 140px;
+    margin-top: 80px;
   }
 }
 @media screen and (max-width: 620px) {
   .benefits__item {
     height: 120px;
+    margin-top: 70px;
   }
 }
 @media screen and (max-width: 420px) {
   .benefits__item {
     height: 100px;
+    margin-top: 50px;
   }
   .benefits__item-icon {
     width: 26px;
