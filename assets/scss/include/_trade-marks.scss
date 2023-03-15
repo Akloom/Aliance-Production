@@ -3,7 +3,7 @@
   padding: 0 20px;
 
   h1 {
-      font-family: "Montserrat";
+    font-family: "Montserrat";
     width: max-content;
     font-weight: 400;
     font-size: 48px;
@@ -24,7 +24,6 @@
 }
 
 .marks {
-  padding: 0 20px;
   margin-top: 50px;
   display: flex;
   align-items: center;
@@ -98,6 +97,7 @@
 
   .marks {
     margin-top: 40px;
+    padding: 0 20px;
 
     &-card {
       padding: 35px 50px;

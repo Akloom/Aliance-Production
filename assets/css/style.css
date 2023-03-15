@@ -1498,7 +1498,6 @@
 }
 
 .marks {
-  padding: 0 20px;
   margin-top: 50px;
   display: flex;
   align-items: center;
@@ -1562,6 +1561,7 @@
   }
   .marks {
     margin-top: 40px;
+    padding: 0 20px;
   }
   .marks-card {
     padding: 35px 50px;
