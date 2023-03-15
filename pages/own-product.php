@@ -53,6 +53,10 @@ if (isset($_POST['send-modal'])) {
 
 <?php include "./layout/name-page.php" ?>
 
+<!-- Блок: Собственные торговые марки -->
+
+<?php include "./include/trade-marks.php" ?>
+
 <!-- Блок: сотрудничество -->
 
 <?php
