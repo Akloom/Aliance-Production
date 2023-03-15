@@ -80,7 +80,59 @@ if (isset($_POST['send-modal'])) {
 
 <?php include "./include/aerosol.php" ?>
 
+<section class="research-center container" data-aos="fade-up">
+  <div class="research-center__info">
+    <h1>Исследовательский центр Aliance production</h1>
+    <div class="research-center__info-desc">
+      <p>Явные признаки победы институционализации рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Приятно, граждане, наблюдать, как активно развивающиеся страны третьего мира могут быть ограничены исключительно образом мышления. Лишь независимые государства набирают популярность среди определенных слоев населения, а значит, должны быть указаны как претенденты на роль ключевых факторов. Лишь акционеры крупнейших компаний могут быть призваны к ответу.</p>
+      <p>С учётом сложившейся международной обстановки, синтетическое тестирование требует определения и уточнения анализа существующих паттернов поведения. Не следует, однако, забывать, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений. Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление однозначно фиксирует необходимость стандартных подходов.</p>
+    </div>
+  </div>
+
+  <?php include "./layout/blog-swiper.php" ?>
+</section>
+
 <!-- Блок: сотрудничество -->
+
+<?php
+include "./include/config.php";
+
+$form_cooperate = "/about";
+
+$name = $phone = '';
+$errMessageName = $errMessagePhone = '';
+
+if (isset($_POST['send'])) {
+  $name = $_POST['name'];
+  $phone = $_POST['phone'];
+
+  if (empty($name)) {
+    $errMessageName = 'Поле не должно быть пустым';
+  } else {
+    $errMessageName = '';
+  }
+  if (empty($phone)) {
+    $errMessagePhone = 'Поле не должно быть пустым';
+  } else {
+    $errMessagePhone = '';
+  }
+
+  if (!$errMessageName) {
+
+    if (!$errMessagePhone) {
+      $sql = "INSERT INTO `cooperation` (name, phone) VALUES ('$name', '$phone')";
+
+      if ($connect->query($sql) === TRUE) {
+        echo '';
+      } else {
+        echo 'Error: ' . $sql . '<br>' . $conn->error;
+      }
+      $connect->close();
+    }
+  }
+}
+
+?>
 
 <?php include "./include/cooperate.php" ?>
 

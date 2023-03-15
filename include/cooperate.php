@@ -7,7 +7,7 @@
       <h1>Хотите сотрудничать?</h1>
       <p> Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
     </div>
-    <form action="/" method="post" class="cooperate-content__form">
+    <form action="<?php $form_cooperate ?>" method="post" class="cooperate-content__form">
       <div class="cooperate-content__form-inputs">
         <div class="cooperate-content__form-inputs__item">
           <input type="text" name="name" placeholder="Ваше имя">

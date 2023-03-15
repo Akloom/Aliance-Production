@@ -153,9 +153,10 @@ if (isset($_POST['send-modal'])) {
 
 <!-- Блок: сотрудничество -->
 
-
 <?php
 include "./include/config.php";
+
+$form_cooperate = "/";
 
 $name = $phone = '';
 $errMessageName = $errMessagePhone = '';
@@ -191,7 +192,6 @@ if (isset($_POST['send'])) {
 }
 
 ?>
-
 
 <?php include "./include/cooperate.php" ?>
 

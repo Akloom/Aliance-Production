@@ -53,6 +53,50 @@ if (isset($_POST['send-modal'])) {
 
 <?php include "./layout/name-page.php" ?>
 
+<!-- Блок: сотрудничество -->
+
+<?php
+include "./include/config.php";
+
+$form_cooperate = "/contact";
+
+$name = $phone = '';
+$errMessageName = $errMessagePhone = '';
+
+if (isset($_POST['send'])) {
+  $name = $_POST['name'];
+  $phone = $_POST['phone'];
+
+  if (empty($name)) {
+    $errMessageName = 'Поле не должно быть пустым';
+  } else {
+    $errMessageName = '';
+  }
+  if (empty($phone)) {
+    $errMessagePhone = 'Поле не должно быть пустым';
+  } else {
+    $errMessagePhone = '';
+  }
+
+  if (!$errMessageName) {
+
+    if (!$errMessagePhone) {
+      $sql = "INSERT INTO `cooperation` (name, phone) VALUES ('$name', '$phone')";
+
+      if ($connect->query($sql) === TRUE) {
+        echo '';
+      } else {
+        echo 'Error: ' . $sql . '<br>' . $conn->error;
+      }
+      $connect->close();
+    }
+  }
+}
+
+?>
+
+<?php include "./include/cooperate.php" ?>
+
 <!-- Подвал сайта -->
 
 <?php include "./layout/lower-footer.php" ?>

@@ -14,5 +14,12 @@ get('/politics', 'pages/politics.php');
 
 
 post('/', '/pages/index.php');
+post('/about', 'pages/about.php');
+post('/blog', 'pages/blog.php');
+post('/contact', 'pages/contact.php');
+post('/contract-product', 'pages/contract-product.php');
+post('/ag-tech-product', 'pages/ag-tech-product.php');
+post('/autohim-product', 'pages/autohim-product.php');
+post('/own-product', 'pages/own-product.php');
 
 any('/404','pages/404.php');
