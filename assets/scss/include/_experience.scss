@@ -38,7 +38,7 @@
     p {
       max-width: 700px;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 160%;
       color: $color-gray-500;
     }
@@ -56,7 +56,7 @@
 @media screen and (max-width: 920px) {
   .experience {
     margin-top: 100px;
-    gap: 100px;
+    gap: 80px;
   
     &-content {
   
@@ -75,7 +75,7 @@
 @media screen and (max-width: 620px) {
   .experience {
     margin-top: 80px;
-    gap: 80px;
+    gap: 40px;
   
     &-content {
   
@@ -94,7 +94,7 @@
 @media screen and (max-width: 480px) {
   .experience {
     margin-top: 50px;
-    gap: 40px;
+    gap: 20px;
   
     &-content {
   

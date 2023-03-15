@@ -33,7 +33,7 @@
 }
 .header-logo {
   padding: 15px 40px;
-  border-right: 2px solid rgba(235, 235, 240, 0.2);
+  border-right: 2px solid #EBEBF0;
   display: flex;
   align-items: center;
 }
@@ -865,7 +865,7 @@
 .experience-content p {
   max-width: 700px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 160%;
   color: #828A99;
 }
@@ -879,7 +879,7 @@
 @media screen and (max-width: 920px) {
   .experience {
     margin-top: 100px;
-    gap: 100px;
+    gap: 80px;
   }
   .experience-content h1 {
     gap: 30px;
@@ -892,7 +892,7 @@
 @media screen and (max-width: 620px) {
   .experience {
     margin-top: 80px;
-    gap: 80px;
+    gap: 40px;
   }
   .experience-content h1 {
     gap: 20px;
@@ -905,7 +905,7 @@
 @media screen and (max-width: 480px) {
   .experience {
     margin-top: 50px;
-    gap: 40px;
+    gap: 20px;
   }
   .experience-content h1 {
     gap: 10px;
@@ -1034,6 +1034,170 @@
   }
   .benefits__item p {
     font-size: 12px;
+  }
+}
+.about-production {
+  margin-top: 150px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 120px;
+}
+.about-production__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-production__info h1 {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  color: #292D33;
+  text-transform: uppercase;
+}
+.about-production__info h1::before {
+  content: "";
+  display: block;
+  border-radius: 32px;
+  width: 30%;
+  height: 2px;
+  background: #5C8EE5;
+}
+.about-production__info-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-production__info-desc p {
+  max-width: 620px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #828A99;
+}
+.about-production__info-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.about-production__info-content__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-production__info-content__items a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #292D33;
+  transition: 0.6s all;
+}
+.about-production__info-content__items a:hover {
+  color: #5C8EE5;
+}
+.about-production__image {
+  max-width: 500px;
+}
+.about-production__image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .about-production {
+    margin-top: 100px;
+    gap: 80px;
+  }
+  .about-production__info {
+    gap: 20px;
+  }
+  .about-production__info h1 {
+    gap: 30px;
+    font-size: 30px;
+  }
+  .about-production__info-desc {
+    gap: 20px;
+  }
+  .about-production__info-desc p {
+    font-size: 14px;
+  }
+  .about-production__info-content {
+    gap: 30px;
+  }
+  .about-production__info-content__items {
+    gap: 20px;
+  }
+  .about-production__info-content__items a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .about-production {
+    margin-top: 80px;
+    gap: 40px;
+  }
+  .about-production__info {
+    gap: 15px;
+  }
+  .about-production__info h1 {
+    gap: 20px;
+    font-size: 24px;
+  }
+  .about-production__info-desc {
+    gap: 15px;
+  }
+  .about-production__info-desc p {
+    font-size: 12px;
+  }
+  .about-production__info-content {
+    gap: 20px;
+  }
+  .about-production__info-content__items {
+    gap: 15px;
+  }
+  .about-production__info-content__items a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-production {
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .about-production__info {
+    gap: 10px;
+  }
+  .about-production__info h1 {
+    gap: 10px;
+    font-size: 18px;
+  }
+  .about-production__info-desc {
+    gap: 10px;
+  }
+  .about-production__info-desc p {
+    font-size: 10px;
+  }
+  .about-production__info-content {
+    gap: 10px;
+  }
+  .about-production__info-content__items {
+    gap: 10px;
+  }
+  .about-production__info-content__items a {
+    font-size: 10px;
+  }
+  .about-production__info-content__items a img {
+    width: 20px;
   }
 }
 .scheme {
