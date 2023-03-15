@@ -2312,6 +2312,44 @@
     font-size: 10px;
   }
 }
+.politics {
+  margin-top: 100px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.politics p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #292D33;
+}
+
+@media screen and (max-width: 920px) {
+  .politics {
+    margin-top: 80px;
+  }
+  .politics p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .politics {
+    margin-top: 50px;
+  }
+  .politics p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .politics {
+    margin-top: 30px;
+  }
+  .politics gap5 p {
+    font-size: 10px;
+  }
+}
 .cooperate {
   padding: 0 20px;
   margin-top: 150px;

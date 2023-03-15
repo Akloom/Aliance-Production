@@ -1,0 +1,49 @@
+.politics {
+  margin-top: 100px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: $color-black-800;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .politics {
+    margin-top: 80px;
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 620px) {
+  .politics {
+    margin-top: 50px;
+  
+    p {
+      font-size: 12px;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .politics {
+    margin-top: 30px;
+    gap5
+
+  
+    p {
+      font-size: 10px;
+    }
+  }
+  
+}
