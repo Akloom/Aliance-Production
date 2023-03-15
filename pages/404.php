@@ -46,6 +46,16 @@ if (isset($_POST['send-modal'])) {
 
 <?php include "./include/nav.php" ?>
 
+<!-- 404 -->
+
+<!-- pnd - page not found -->
+
+<section class="pnd container">
+  <h1>404</h1>
+  <span>Страница не найдена</span>
+  <p>Мы не смогли найти страницу с таким адресом, попробуйте перейти на главную или напишите нам.</p>
+  <a href="/">Вернуться на главную</a>
+</section>
 
 <!-- Подвал сайта -->
 
