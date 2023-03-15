@@ -97,3 +97,12 @@ var swiper3 = new Swiper("#swiper3", {
     },
   },
 });
+
+// Читать больше
+
+let readMore = document.querySelector('.seo-btn');
+let infoMore = document.querySelector('.seo-info__more');
+readMore.addEventListener('click', () => {
+  readMore.classList.toggle('is-active');
+  infoMore.classList.toggle('is-active');
+});
