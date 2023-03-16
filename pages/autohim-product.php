@@ -76,12 +76,51 @@ if (isset($_POST['send-modal'])) {
 
 <!-- Блок: изготовление химии -->
 
-<section class="manufacturing">
-  <div class="manufacturing-content container">
-
+<section class="manufacturing" data-aos="fade-up">
+  <div class="manufacturing-content">
+    <h1>Изготовление автохимии</h1>
+    <p>Но современная методология разработки позволяет оценить значение прогресса профессионального сообщества. Есть над чем задуматься: тщательные исследования конкурентов набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям. В своём стремлении повысить качество жизни, они забывают, что дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для поставленных обществом задач.</p>
+    <div class="manufacturing-content__info">
+      <div class="manufacturing-content__info-items">
+        <a href="#">
+          <img src="../assets/img/icons/him-icon.svg" alt="him">
+          <span>Полное описание товаров</span>
+        </a>
+        <a href="#">
+          <img src="../assets/img/icons/car-icon.svg" alt="car">
+          <span>Актуальные цены</span>
+        </a>
+        <a href="#">
+          <img src="../assets/img/icons/him-icon.svg" alt="him">
+          <span>Полное описание товаров</span>
+        </a>
+        <a href="#">
+          <img src="../assets/img/icons/car-icon.svg" alt="car">
+          <span>Актуальные цены</span>
+        </a>
+      </div>
+      <div class="manufacturing-content__info-items">
+        <a href="#">
+          <img src="../assets/img/icons/brush-icon.svg" alt="brush">
+          <span>Лаки и краски</span>
+        </a>
+        <a href="#">
+          <img src="../assets/img/icons/him-icon.svg" alt="him">
+          <span>Химические производства</span>
+        </a>
+        <a href="#">
+          <img src="../assets/img/icons/brush-icon.svg" alt="brush">
+          <span>Лаки и краски</span>
+        </a>
+        <a href="#">
+          <img src="../assets/img/icons/him-icon.svg" alt="him">
+          <span>Химические производства</span>
+        </a>
+      </div>
+    </div>
   </div>
   <div class="manufacturing-image">
-    <img src="" alt="">
+    <img src="../assets/img/image/manufactoring-image.png" alt="manufacturing">
   </div>
 </section>
 
