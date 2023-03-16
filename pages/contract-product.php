@@ -2,6 +2,8 @@
 // Название страницы
 $web_title = "Контрактное производство";
 $page_name = "Контрактное производство";
+$before_page_name = "";
+$before_page_name_link = "";
 ?>
 
 

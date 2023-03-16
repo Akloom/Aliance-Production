@@ -2,6 +2,8 @@
 // Название страницы
 $web_title = "Автохимия AG-Tech";
 $page_name = "Автохимия AG-Tech";
+$before_page_name = "Собственные торговые марки" . "<span> - </span>";
+$before_page_name_link = "/own-product";
 ?>
 
 

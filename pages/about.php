@@ -1,6 +1,8 @@
 <?php
 $web_title = "О компании";
 $page_name = "О компании";
+$before_page_name = "";
+$before_page_name_link = "";
 ?>
 
 <?php include "./layout/header.php" ?>
@@ -79,6 +81,8 @@ if (isset($_POST['send-modal'])) {
 <!-- Блок: аэрозольная продукция -->
 
 <?php include "./include/aerosol.php" ?>
+
+<!-- Блок: исследовательский центр -->
 
 <section class="research-center container" data-aos="fade-up">
   <div class="research-center__info">

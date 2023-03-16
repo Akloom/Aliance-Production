@@ -2,6 +2,8 @@
 // Название страницы
 $web_title = "Собственные торговые марки";
 $page_name = "Собственные торговые марки";
+$before_page_name = "";
+$before_page_name_link = "";
 ?>
 
 

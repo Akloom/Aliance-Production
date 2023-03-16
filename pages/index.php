@@ -48,6 +48,7 @@ if (isset($_POST['send-modal'])) {
 <?php include "./include/nav.php" ?>
 
 <!-- Блок: Баннер -->
+
 <div data-aos="fade-right">
   <section class="banner  data-aos="fade-right">
     <div class=" banner-content container">
@@ -117,6 +118,7 @@ if (isset($_POST['send-modal'])) {
       </div>
   </section>
 </div>
+
 <!-- Блок: Схема работы -->
 
 <?php include "./layout/scheme-work.php" ?>

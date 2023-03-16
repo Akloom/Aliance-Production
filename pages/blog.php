@@ -2,6 +2,8 @@
 // Название страницы
 $web_title = "Блог";
 $page_name = "Блог";
+$before_page_name = "";
+$before_page_name_link = "";
 ?>
 
 

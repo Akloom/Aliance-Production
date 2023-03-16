@@ -138,7 +138,7 @@
   align-items: center;
   gap: 14px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 160%;
   color: #292D33;
 }
@@ -629,6 +629,7 @@
 .name-page__breadcrumps {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .name-page__breadcrumps a {
@@ -1367,6 +1368,124 @@
   }
   .map iframe {
     height: 200px;
+  }
+}
+.auto-him {
+  margin-top: 100px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.auto-him__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 120px;
+}
+.auto-him__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.auto-him__info h1 {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  color: #292D33;
+  text-transform: uppercase;
+}
+.auto-him__info h1::before {
+  content: "";
+  display: block;
+  border-radius: 32px;
+  width: 30%;
+  height: 2px;
+  background: #5C8EE5;
+}
+.auto-him__info-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.auto-him__info-desc p {
+  max-width: 620px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #828A99;
+}
+.auto-him__image {
+  max-width: 500px;
+}
+.auto-him__image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .auto-him {
+    margin-top: 80px;
+  }
+  .auto-him__content {
+    gap: 80px;
+  }
+  .auto-him__info {
+    gap: 20px;
+  }
+  .auto-him__info h1 {
+    font-size: 28px;
+  }
+  .auto-him__info-desc {
+    gap: 10px;
+  }
+  .auto-him__info-desc p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .auto-him {
+    margin-top: 50px;
+  }
+  .auto-him__content {
+    gap: 40px;
+  }
+  .auto-him__info {
+    gap: 15px;
+  }
+  .auto-him__info h1 {
+    font-size: 22px;
+  }
+  .auto-him__info-desc {
+    gap: 10px;
+  }
+  .auto-him__info-desc p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .auto-him {
+    margin-top: 30px;
+  }
+  .auto-him__content {
+    gap: 20px;
+  }
+  .auto-him__info {
+    gap: 10px;
+  }
+  .auto-him__info h1 {
+    font-size: 16px;
+  }
+  .auto-him__info-desc {
+    gap: 5px;
+  }
+  .auto-him__info-desc p {
+    font-size: 10px;
   }
 }
 .scheme {

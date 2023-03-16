@@ -1,6 +1,8 @@
 <?php
 $web_title = "Политика конфиденциальности";
 $page_name = "Политика конфиденциальности";
+$before_page_name = "";
+$before_page_name_link = "";
 ?>
 
 <?php include "./layout/header.php" ?>
