@@ -102,10 +102,15 @@ if (isset($_POST['send-modal'])) {
         </a>
       </div>
     </div>
-    <a href="#">Скачать каталог</a>
+    <a href="#" class="distributor-content__btn">
+      <svg>
+        <use href="../assets/img/icons/svg-sprites.svg#install-icon"></use>
+      </svg>
+      <span>Скачать каталог</span>
+    </a>
   </div>
   <div class="distributor-image">
-    <img src="../assets/img/image/distibutor-image.png" alt="distributor">
+    <img src="../assets/img/image/distributor-image.png" alt="distributor">
   </div>
 </section>
 
