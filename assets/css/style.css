@@ -1640,6 +1640,137 @@
     font-size: 10px;
   }
 }
+.types-ah {
+  margin-top: 150px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.types-ah h1 {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  color: #292D33;
+  text-transform: uppercase;
+}
+.types-ah h1::before {
+  content: "";
+  display: block;
+  border-radius: 32px;
+  width: 30%;
+  height: 2px;
+  background: #5C8EE5;
+}
+.types-ah p {
+  max-width: 740px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #828A99;
+}
+.types-ah__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.types-ah__content-items {
+  max-width: 257px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.types-ah__content-items span {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #292D33;
+}
+.types-ah__content-items span:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 1px;
+  background: #5C8EE5;
+}
+
+@media screen and (max-width: 920px) {
+  .types-ah {
+    margin-top: 100px;
+    gap: 30px;
+  }
+  .types-ah h1 {
+    gap: 30px;
+    font-size: 28px;
+  }
+  .types-ah p {
+    font-size: 14px;
+  }
+  .types-ah__content {
+    gap: 30px;
+  }
+  .types-ah__content-items {
+    gap: 30px;
+  }
+  .types-ah__content-items span {
+    gap: 20px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .types-ah {
+    margin-top: 80px;
+    gap: 20px;
+  }
+  .types-ah h1 {
+    gap: 20px;
+    font-size: 22px;
+  }
+  .types-ah p {
+    font-size: 12px;
+  }
+  .types-ah__content {
+    gap: 20px;
+  }
+  .types-ah__content-items {
+    gap: 20px;
+  }
+  .types-ah__content-items span {
+    gap: 15px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .types-ah {
+    margin-top: 50px;
+    gap: 10px;
+  }
+  .types-ah h1 {
+    gap: 10px;
+    font-size: 18px;
+  }
+  .types-ah p {
+    font-size: 10px;
+  }
+  .types-ah__content {
+    gap: 20px;
+  }
+  .types-ah__content-items {
+    gap: 20px;
+  }
+  .types-ah__content-items span {
+    gap: 10px;
+    font-size: 10px;
+  }
+}
 .scheme {
   margin-top: 180px;
   padding: 0 20px;

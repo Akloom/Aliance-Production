@@ -1,0 +1,155 @@
+.types-ah {
+  margin-top: 150px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  h1 {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    color: $color-black-800;
+    text-transform: uppercase;
+
+    &::before {
+      content: '';
+      display: block;
+      border-radius: 32px;
+      width: 30%;
+      height: 2px;
+      background: $main-color;
+    }
+  }
+
+  p {
+    max-width: 740px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: $color-gray-500;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    &-items {
+      max-width: 257px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: $color-black-800;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 16px;
+          height: 1px;
+          background: $main-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .types-ah {
+    margin-top: 100px;
+    gap: 30px;
+  
+    h1 {
+      gap: 30px;
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    &__content {
+      gap: 30px;
+  
+      &-items {
+        gap: 30px;
+  
+        span {
+          gap: 20px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .types-ah {
+    margin-top: 80px;
+    gap: 20px;
+  
+    h1 {
+      gap: 20px;
+      font-size: 22px;
+    }
+  
+    p {
+      font-size: 12px;
+    }
+  
+    &__content {
+      gap: 20px;
+  
+      &-items {
+        gap: 20px;
+  
+        span {
+          gap: 15px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .types-ah {
+    margin-top: 50px;
+    gap: 10px;
+  
+    h1 {
+      gap: 10px;
+      font-size: 18px;
+    }
+  
+    p {
+      font-size: 10px;
+    }
+  
+    &__content {
+      gap: 20px;
+  
+      &-items {
+        gap: 20px;
+  
+        span {
+          gap: 10px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

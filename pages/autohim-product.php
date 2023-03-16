@@ -138,6 +138,44 @@ if (isset($_POST['send-modal'])) {
   <?php include "./layout/blog-swiper.php" ?>
 </section>
 
+<!-- Блок: виды автохимии -->
+<!-- ah - avtohim -->
+
+<section class="types-ah container">
+  <h1>Виды автохимии</h1>
+  <p>Но современная методология разработки позволяет оценить значение прогресса профессионального сообщества. Есть над чем задуматься: тщательные исследования конкурентов набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям.</p>
+  <div class="types-ah__content">
+    <div class="types-ah__content-items">
+      <span>Антискотч</span>
+      <span>Многоцелевая смазка</span>
+      <span>Жидкий ключ</span>
+      <span>Высокотемпературная смазка</span>
+      <span>Универсальный очиститель деталей</span>
+    </div>
+    <div class="types-ah__content-items">
+      <span>Силиконовая смазка</span>
+      <span>Цепная смазка</span>
+      <span>Медная смазка</span>
+      <span>Графитовая смазка</span>
+      <span>Очиститель кондиционера пенный</span>
+    </div>
+    <div class="types-ah__content-items">
+      <span>Очиститель тормозных дисков</span>
+      <span>Очиститель битумных пятен</span>
+      <span>Очиститель кондционера</span>
+      <span>Очиститель дросельной заслонки</span>
+      <span>Очиститель обивки </span>
+    </div>
+    <div class="types-ah__content-items">
+      <span>Тефлоновая смазка</span>
+      <span>Очиститель двигателя</span>
+      <span>Универсальный очиститель</span>
+      <span>Чернитель шин </span>
+      <span>Чернитель шин + очистка</span>
+    </div>
+  </div>
+</section>
+
 <!-- Блок: Схема работы -->
 
 <?php include "./layout/scheme-work.php" ?>
