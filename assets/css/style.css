@@ -1370,6 +1370,124 @@
     height: 200px;
   }
 }
+.ag-tech {
+  margin-top: 100px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.ag-tech__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 120px;
+}
+.ag-tech__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ag-tech__info h1 {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  color: #292D33;
+  text-transform: uppercase;
+}
+.ag-tech__info h1::before {
+  content: "";
+  display: block;
+  border-radius: 32px;
+  width: 30%;
+  height: 2px;
+  background: #5C8EE5;
+}
+.ag-tech__info-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ag-tech__info-desc p {
+  max-width: 620px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #828A99;
+}
+.ag-tech__image {
+  max-width: 500px;
+}
+.ag-tech__image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .ag-tech {
+    margin-top: 80px;
+  }
+  .ag-tech__content {
+    gap: 80px;
+  }
+  .ag-tech__info {
+    gap: 20px;
+  }
+  .ag-tech__info h1 {
+    font-size: 28px;
+  }
+  .ag-tech__info-desc {
+    gap: 10px;
+  }
+  .ag-tech__info-desc p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .ag-tech {
+    margin-top: 50px;
+  }
+  .ag-tech__content {
+    gap: 40px;
+  }
+  .ag-tech__info {
+    gap: 15px;
+  }
+  .ag-tech__info h1 {
+    font-size: 22px;
+  }
+  .ag-tech__info-desc {
+    gap: 10px;
+  }
+  .ag-tech__info-desc p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ag-tech {
+    margin-top: 30px;
+  }
+  .ag-tech__content {
+    gap: 20px;
+  }
+  .ag-tech__info {
+    gap: 10px;
+  }
+  .ag-tech__info h1 {
+    font-size: 16px;
+  }
+  .ag-tech__info-desc {
+    gap: 5px;
+  }
+  .ag-tech__info-desc p {
+    font-size: 10px;
+  }
+}
 .auto-him {
   margin-top: 100px;
   padding: 0 20px;
