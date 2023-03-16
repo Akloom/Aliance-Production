@@ -1,0 +1,167 @@
+.contact {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+
+
+  a {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 160%;
+    color: $color-black-800;
+    text-decoration: underline;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &__contacts {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &__icon {
+          width: 24px;
+          height: 24px;
+          fill: $main-color;
+        }
+
+        a {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: $color-black-800;
+          text-decoration: none;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: $color-black-800;
+        }
+      }
+    }
+
+    &__social {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      &-icon {
+        width: 24px;
+        height: 24px;
+        fill: $main-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .contact {
+    margin-top: 80px;
+    padding: 40px 20px;
+
+    &-logo {
+      width: 40%;
+
+      a {
+        font-size: 22px;
+      }
+    }
+
+    &-content {
+      gap: 20px;
+
+      &__contacts {
+        gap: 40px;
+
+        &-item {
+          gap: 10px;
+
+          p {
+            font-size: 16px;
+          }
+
+          a{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .contact {
+    margin-top: 50px;
+    padding: 30px 20px;
+
+    a {
+      font-size: 18px;
+    }
+
+    &-content {
+      gap: 20px;
+
+      &__contacts {
+        gap: 30px;
+
+        &-item {
+          gap: 10px;
+
+          p {
+            font-size: 14px;
+          }
+
+          a{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    margin-top: 40px;
+    padding: 20px 20px;
+
+    span {
+      font-size: 16px;
+    }
+
+    &-content {
+      gap: 15px;
+
+      &__contacts {
+        gap: 20px;
+
+        &-item {
+          gap: 10px;
+
+          p {
+            font-size: 12px;
+          }
+
+          a{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
