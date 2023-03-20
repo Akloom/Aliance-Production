@@ -1684,6 +1684,248 @@
     font-size: 10px;
   }
 }
+.greetings {
+  min-height: 100vh;
+  padding: 0 20px;
+  background-color: #5C8EE5;
+}
+.greetings-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.greetings-content h1 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.greetings-content p {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.greetings-direct {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.greetings-direct span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.greetings-direct__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.greetings-direct__links a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 920px) {
+  .greetings-content {
+    gap: 20px;
+  }
+  .greetings-content h1 {
+    font-size: 40px;
+  }
+  .greetings-content p {
+    font-size: 26px;
+  }
+  .greetings-direct {
+    gap: 10px;
+  }
+  .greetings-direct span {
+    font-size: 18px;
+  }
+  .greetings-direct__links a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .greetings-content {
+    gap: 15px;
+  }
+  .greetings-content h1 {
+    font-size: 30px;
+  }
+  .greetings-content p {
+    font-size: 22px;
+  }
+  .greetings-direct {
+    gap: 10px;
+  }
+  .greetings-direct span {
+    font-size: 16px;
+  }
+  .greetings-direct__links a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .greetings-content {
+    gap: 10px;
+  }
+  .greetings-content h1 {
+    font-size: 20px;
+  }
+  .greetings-content p {
+    font-size: 18px;
+  }
+  .greetings-direct {
+    gap: 10px;
+  }
+  .greetings-direct span {
+    font-size: 14px;
+  }
+  .greetings-direct__links a {
+    font-size: 12px;
+  }
+}
+.applications {
+  margin-top: 40px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.applications-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.applications h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #292D33;
+}
+.applications a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #5C8EE5;
+  text-decoration: underline;
+}
+.applications-card {
+  width: 100%;
+  padding: 30px 20px;
+  border: 1px solid #EBEBF0;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.applications-card h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #292D33;
+}
+.applications-card__table {
+  padding: 20px;
+  border: 1px solid #EBEBF0;
+  border-radius: 24px;
+}
+.applications-card__table thead tr th {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #292D33;
+  text-align: start;
+}
+.applications-card__table tbody tr td {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #828A99;
+}
+
+@media screen and (max-width: 920px) {
+  .applications h1 {
+    font-size: 24px;
+  }
+  .applications a {
+    font-size: 14px;
+  }
+  .applications-card {
+    padding: 25px 15px;
+  }
+  .applications-card h3 {
+    font-size: 18px;
+  }
+  .applications-card__table {
+    padding: 15px;
+  }
+  .applications-card__table thead tr th {
+    font-size: 14px;
+  }
+  .applications-card__table tbody tr td {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .applications h1 {
+    font-size: 20px;
+  }
+  .applications a {
+    font-size: 12px;
+  }
+  .applications-card {
+    padding: 20px 10px;
+  }
+  .applications-card h3 {
+    font-size: 16px;
+  }
+  .applications-card__table {
+    padding: 10px;
+  }
+  .applications-card__table thead tr th {
+    font-size: 12px;
+  }
+  .applications-card__table tbody tr td {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .applications h1 {
+    font-size: 16px;
+  }
+  .applications a {
+    font-size: 10px;
+  }
+  .applications-card {
+    padding: 15px 10px;
+  }
+  .applications-card h3 {
+    font-size: 12px;
+  }
+  .applications-card__table {
+    padding: 10px;
+  }
+  .applications-card__table thead tr th {
+    font-size: 10px;
+  }
+  .applications-card__table tbody tr td {
+    font-size: 10px;
+  }
+}
 .auto-him {
   margin-top: 100px;
   padding: 0 20px;

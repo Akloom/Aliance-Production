@@ -1,12 +1,12 @@
 <?php
 
 $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $name = "aliance-production";
+$user = "root";
+$pass = "";
+$db = "aliance-production";
 
-    $connect = mysqli_connect($host, $user, $pass, $name);
-
-    if(mysqli_connect_errno()){
-        echo "MySQL Connect Error " . mysqli_connect_error();
-    }
+try {
+    $connect = new PDO("mysql:host=$host; dbname=$db", $user, $pass);
+} catch (PDOException $error) {
+    echo "Ошибка соединения с БД" . $error->getMessage();
+}

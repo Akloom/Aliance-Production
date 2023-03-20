@@ -1,38 +1,4 @@
-  <?php
-  include "config.php";
-  // global $connect;
-
-  // $errMessageName = $errMessagePhone = '';
-
-  // if (isset($_POST['send'])) {
-
-  //   if (empty($_POST['name'])) {
-  //     $errMessageName = "Поле не должно быть пустым";
-  //   } else {
-  //     $errMessageName = "";
-  //   }
-
-  //   if (empty($_POST['phone'])) {
-  //     $errMessagePhone = "Поле не должно быть пустым";
-  //   } else {
-  //     $errMessagePhone = "";
-  //   }
-
-  //   if ($_POST['name']) {
-  //     $name = $_POST['name'];
-
-  //     if ($_POST['phone']) {
-  //       $number = $_POST['phone'];
-
-  //       $add_consultation = "";
-  //       $request_consultation = mysqli_query($connect, $add_consultation);
-  //     }
-  //   }
-  // }
-
-  ?>
-
-  <!-- Шапка -->
+<!-- Шапка -->
 
   <header class="header">
     <a href="/" class="header-logo">
@@ -65,7 +31,7 @@
             <a href="#">Автохимия AP</a>
           </div>
         </div>
-        <a href="/news" class="header-nav__link">Новости</a>
+        <a href="/blog" class="header-nav__link">Блог</a>
         <a href="/contact" class="header-nav__link">Контакты</a>
         <span class="header-nav__line"></span>
       </div>

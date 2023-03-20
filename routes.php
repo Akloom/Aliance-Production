@@ -13,6 +13,12 @@ get('/own-product', 'pages/own-product.php');
 get('/politics', 'pages/politics.php');
 
 
+get('/admin', 'pages/admin/admin.php');
+get('/applications', 'pages/admin/applications.php');
+get('/blog-admin', 'pages/admin/blog-admin.php');
+
+post('/applications', 'pages/admin/applications.php');
+
 post('/', '/pages/index.php');
 post('/about', 'pages/about.php');
 post('/blog', 'pages/blog.php');

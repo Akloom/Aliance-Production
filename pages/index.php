@@ -3,47 +3,16 @@
 $web_title = "Главная"
 ?>
 
+<?php
+
+include "./include/function.php";
+$form_cooperate = "/";
+
+?>
+
 <?php include "./layout/header.php" ?>
 
 <!-- Шапка сайта -->
-
-<?php
-include "./include/config.php";
-
-$nameModal = $phoneModal = '';
-$errMessageNameModal = $errMessagePhoneModal = '';
-
-if (isset($_POST['send-modal'])) {
-  $nameModal = $_POST['name-modal'];
-  $phoneModal = $_POST['phone-modal'];
-
-  if (empty($nameModal)) {
-    $errMessageNameModal = 'Поле не должно быть пустым';
-  } else {
-    $errMessageNameModal = '';
-  }
-  if (empty($phoneModal)) {
-    $errMessagePhoneModal = 'Поле не должно быть пустым';
-  } else {
-    $errMessagePhoneModal = '';
-  }
-
-  if (!$errMessageNameModal) {
-
-    if (!$errMessagePhoneModal) {
-      $sql = "INSERT INTO `consultation` (name, phone) VALUES ('$nameModal', '$phoneModal')";
-
-      if ($connect->query($sql) === TRUE) {
-        echo '';
-      } else {
-        echo 'Error: ' . $sql . '<br>' . $conn->error;
-      }
-      $connect->close();
-    }
-  }
-}
-
-?>
 
 <?php include "./include/nav.php" ?>
 
@@ -154,46 +123,6 @@ if (isset($_POST['send-modal'])) {
 <?php include "./layout/blog-swiper.php" ?>
 
 <!-- Блок: сотрудничество -->
-
-<?php
-include "./include/config.php";
-
-$form_cooperate = "/";
-
-$name = $phone = '';
-$errMessageName = $errMessagePhone = '';
-
-if (isset($_POST['send'])) {
-  $name = $_POST['name'];
-  $phone = $_POST['phone'];
-
-  if (empty($name)) {
-    $errMessageName = 'Поле не должно быть пустым';
-  } else {
-    $errMessageName = '';
-  }
-  if (empty($phone)) {
-    $errMessagePhone = 'Поле не должно быть пустым';
-  } else {
-    $errMessagePhone = '';
-  }
-
-  if (!$errMessageName) {
-
-    if (!$errMessagePhone) {
-      $sql = "INSERT INTO `cooperation` (name, phone) VALUES ('$name', '$phone')";
-
-      if ($connect->query($sql) === TRUE) {
-        echo '';
-      } else {
-        echo 'Error: ' . $sql . '<br>' . $conn->error;
-      }
-      $connect->close();
-    }
-  }
-}
-
-?>
 
 <?php include "./include/cooperate.php" ?>
 
