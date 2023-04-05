@@ -1,16 +1,15 @@
 <?php
-// Название страницы
-$web_title = "Страница Админа"
+$web_title = "Страница админа";
 ?>
 
-<?php include "./layout/header.php" ?>
+<?php include "header-admin.php" ?>
 
 <!-- Баннер -->
 
 <section class="greetings">
   <div class="greetings-content">
     <h1>Доброго времени суток админ!</h1>
-    <p>Желаю хорошего времяпровождения в работе!</p>
+    <p>Желаю хорошего время провождения в работе!</p>
     <div class="greetings-direct">
       <span>Куда хотите отправиться?</span>
       <div class="greetings-direct__links">
@@ -21,4 +20,4 @@ $web_title = "Страница Админа"
   </div>
 </section>
 
-<?php include "./layout/footer.php" ?>
+<?php include "footer-admin.php" ?>

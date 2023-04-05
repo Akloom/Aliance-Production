@@ -80,7 +80,7 @@
         <button id="myBtn">Получить консультацию</button>
 
         <!-- Модальное окно -->
-        <div id="myModal" class="modal">
+        <div id="myModal" class="modal-consl">
           <div class="modal-content">
             <div class="modal-content__header">
               <h1>Есть вопросы?</h1>

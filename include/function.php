@@ -69,14 +69,14 @@ if (isset($_POST['send'])) {
 
 // Данные из БД
 
-$sql = $connect->prepare("SELECT * FROM `consultation` WHERE flag = 0");
+$sql = $connect->prepare("SELECT * FROM `consultation` WHERE `flag` = 0");
 $sql->execute();
 
 $result_sql = $sql->fetchAll(PDO::FETCH_OBJ);
 
 // Данные из БД 2
 
-$sql2 = $connect->prepare("SELECT * FROM `cooperation` WHERE flag = 0");
+$sql2 = $connect->prepare("SELECT * FROM `cooperation` WHERE `flag` = 0");
 $sql2->execute();
 
 $result_sql2 = $sql2->fetchAll(PDO::FETCH_OBJ);
@@ -84,7 +84,7 @@ $result_sql2 = $sql2->fetchAll(PDO::FETCH_OBJ);
 // Удалить
 
 if (isset($_POST['delete'])) {
-  $sql = "UPDATE `consultation` SET `flag` = 1 WHERE `id` = :id;";
+  $sql = "DELETE FROM `consultation` WHERE `id` = :id";
   $query = $connect->prepare($sql);
   $result = $query->execute([
     ':id' => $_GET['id'],
@@ -93,7 +93,7 @@ if (isset($_POST['delete'])) {
 
 // Удалить 2
 
-if (isset($_POST['delete'])) {
+if (isset($_POST['delete2'])) {
   $sql2 = "UPDATE `consultation` SET `flag` = 1 WHERE `id` = :id;";
   $query2 = $connect->prepare($sql2);
   $result2 = $query2->execute([

@@ -367,7 +367,7 @@
     transition: 0.6s all;
   }
 }
-.modal {
+.modal-consl {
   display: none;
   position: fixed;
   z-index: 1;
@@ -1795,135 +1795,6 @@
   }
   .greetings-direct__links a {
     font-size: 12px;
-  }
-}
-.applications {
-  margin-top: 40px;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.applications-content {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.applications h1 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 120%;
-  color: #292D33;
-}
-.applications a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 120%;
-  color: #5C8EE5;
-  text-decoration: underline;
-}
-.applications-card {
-  width: 100%;
-  padding: 30px 20px;
-  border: 1px solid #EBEBF0;
-  border-radius: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.applications-card h3 {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 120%;
-  color: #292D33;
-}
-.applications-card__table {
-  padding: 20px;
-  border: 1px solid #EBEBF0;
-  border-radius: 24px;
-}
-.applications-card__table thead tr th {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 120%;
-  color: #292D33;
-  text-align: start;
-}
-.applications-card__table tbody tr td {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 160%;
-  color: #828A99;
-}
-
-@media screen and (max-width: 920px) {
-  .applications h1 {
-    font-size: 24px;
-  }
-  .applications a {
-    font-size: 14px;
-  }
-  .applications-card {
-    padding: 25px 15px;
-  }
-  .applications-card h3 {
-    font-size: 18px;
-  }
-  .applications-card__table {
-    padding: 15px;
-  }
-  .applications-card__table thead tr th {
-    font-size: 14px;
-  }
-  .applications-card__table tbody tr td {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 620px) {
-  .applications h1 {
-    font-size: 20px;
-  }
-  .applications a {
-    font-size: 12px;
-  }
-  .applications-card {
-    padding: 20px 10px;
-  }
-  .applications-card h3 {
-    font-size: 16px;
-  }
-  .applications-card__table {
-    padding: 10px;
-  }
-  .applications-card__table thead tr th {
-    font-size: 12px;
-  }
-  .applications-card__table tbody tr td {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .applications h1 {
-    font-size: 16px;
-  }
-  .applications a {
-    font-size: 10px;
-  }
-  .applications-card {
-    padding: 15px 10px;
-  }
-  .applications-card h3 {
-    font-size: 12px;
-  }
-  .applications-card__table {
-    padding: 10px;
-  }
-  .applications-card__table thead tr th {
-    font-size: 10px;
-  }
-  .applications-card__table tbody tr td {
-    font-size: 10px;
   }
 }
 .auto-him {

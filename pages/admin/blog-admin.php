@@ -3,6 +3,8 @@
 $web_title = "Страница Админа: Блог"
 ?>
 
-<?php include "./layout/header.php" ?>
+<?php include "header-admin.php" ?>
 
-<?php include "./layout/footer.php" ?>
+
+
+<?php include "footer-admin.php" ?>
